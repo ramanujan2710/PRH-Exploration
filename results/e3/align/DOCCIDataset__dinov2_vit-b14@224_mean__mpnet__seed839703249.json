@@ -1,0 +1,1 @@
+{"task": {"kind": "align", "dataset": "DOCCIDataset", "vision": "dinov2_vit-b14@224_mean", "language": "mpnet", "seed": 839703249}, "metrics": {"foscttm": 0.15132019808443878, "mean_rank": 6129.921983014024, "num_validation_samples": 40504, "fit_and_evaluation_seconds": 691.8640100955963}, "seconds": 691.8640451431274}

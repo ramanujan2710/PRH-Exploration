@@ -1,0 +1,1 @@
+{"task": {"kind": "align", "dataset": "coco_train2014", "vision": "franca_vit-g14@224_laion_mean", "language": "qwen3-embedding-8b", "seed": 839703249}, "metrics": {"foscttm": 0.05572783995649337, "mean_rank": 2258.144701757851, "num_validation_samples": 40504, "fit_and_evaluation_seconds": 3449.7239649295807}, "seconds": 3449.7751076221466}

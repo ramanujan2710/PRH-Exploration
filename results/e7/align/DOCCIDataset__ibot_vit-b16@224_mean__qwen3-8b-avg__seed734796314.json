@@ -1,0 +1,1 @@
+{"task": {"kind": "align", "dataset": "DOCCIDataset", "vision": "ibot_vit-b16@224_mean", "language": "qwen3-8b-avg", "seed": 734796314}, "metrics": {"foscttm": 0.46392380950033285, "mean_rank": 18791.30605619198, "num_validation_samples": 40504, "fit_and_evaluation_seconds": 1085.9126608371735}, "seconds": 1085.9230751991272}

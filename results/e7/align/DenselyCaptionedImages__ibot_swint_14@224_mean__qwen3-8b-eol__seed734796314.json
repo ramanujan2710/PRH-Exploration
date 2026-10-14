@@ -1,0 +1,1 @@
+{"task": {"kind": "align", "dataset": "DenselyCaptionedImages", "vision": "ibot_swint_14@224_mean", "language": "qwen3-8b-eol", "seed": 734796314}, "metrics": {"foscttm": 0.3303942729820932, "mean_rank": 13382.95923859372, "num_validation_samples": 40504, "fit_and_evaluation_seconds": 835.4709966182709}, "seconds": 835.4710512161255}

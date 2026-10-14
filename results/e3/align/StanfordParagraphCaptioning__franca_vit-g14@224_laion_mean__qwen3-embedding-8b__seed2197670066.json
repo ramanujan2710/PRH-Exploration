@@ -1,0 +1,1 @@
+{"task": {"kind": "align", "dataset": "StanfordParagraphCaptioning", "vision": "franca_vit-g14@224_laion_mean", "language": "qwen3-embedding-8b", "seed": 2197670066}, "metrics": {"foscttm": 0.09155690231337378, "mean_rank": 3709.3292143985777, "num_validation_samples": 40504, "fit_and_evaluation_seconds": 1191.7362549304962}, "seconds": 1191.748910665512}

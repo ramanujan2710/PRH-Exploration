@@ -1,0 +1,1 @@
+{"task": {"kind": "geometry", "dataset": "DenselyCaptionedImages", "vision": "dinov2_vit-g14@224_mean", "language": "mpnet"}, "metrics": {"cka": 0.501797284820286, "mutual_knn": 0.10831518471240997, "tsi": 0.6449382901191711, "qsi": 0.6469123363494873}, "seconds": 1.8714442253112793}

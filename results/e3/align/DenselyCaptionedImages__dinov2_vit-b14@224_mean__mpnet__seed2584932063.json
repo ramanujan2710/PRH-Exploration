@@ -1,0 +1,1 @@
+{"task": {"kind": "align", "dataset": "DenselyCaptionedImages", "vision": "dinov2_vit-b14@224_mean", "language": "mpnet", "seed": 2584932063}, "metrics": {"foscttm": 0.22403282061085994, "mean_rank": 9075.001333201659, "num_validation_samples": 40504, "fit_and_evaluation_seconds": 454.7819137573242}, "seconds": 454.781950712204}

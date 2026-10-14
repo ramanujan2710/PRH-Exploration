@@ -1,0 +1,1 @@
+{"task": {"kind": "geometry", "dataset": "StanfordParagraphCaptioning", "vision": "dinov2_vit-b14@224_mean", "language": "mpnet"}, "metrics": {"cka": 0.646229954248568, "mutual_knn": 0.12584000825881958, "tsi": 0.6417532563209534, "qsi": 0.6201674342155457}, "seconds": 1.7665996551513672}

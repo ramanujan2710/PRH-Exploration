@@ -1,0 +1,1 @@
+{"task": {"kind": "geometry", "dataset": "DenselyCaptionedImages", "vision": "franca_vit-g14@224_laion", "language": "llama3-8b-eol"}, "metrics": {"cka": 0.3882692315716144, "mutual_knn": 0.07299167662858963, "tsi": 0.6123606562614441, "qsi": 0.6133149266242981}, "seconds": 19.39358115196228}

@@ -1,0 +1,1216 @@
+{
+ "run": "full",
+ "n": 1024,
+ "n_perms": 200,
+ "llms": [
+  "bigscience/bloomz-560m",
+  "bigscience/bloomz-1b1",
+  "bigscience/bloomz-1b7",
+  "bigscience/bloomz-3b",
+  "bigscience/bloomz-7b1",
+  "openlm-research/open_llama_3b",
+  "openlm-research/open_llama_7b",
+  "openlm-research/open_llama_13b",
+  "huggyllama/llama-7b",
+  "huggyllama/llama-13b",
+  "huggyllama/llama-30b",
+  "huggyllama/llama-65b",
+  "allenai/OLMo-1B-hf",
+  "allenai/OLMo-7B-hf",
+  "google/gemma-2b",
+  "google/gemma-7b",
+  "mistralai/Mistral-7B-v0.1",
+  "mistralai/Mixtral-8x7B-v0.1",
+  "NousResearch/Meta-Llama-3-8B",
+  "NousResearch/Meta-Llama-3-70B"
+ ],
+ "vision": [
+  "vit_tiny_patch16_224.augreg_in21k",
+  "vit_small_patch16_224.augreg_in21k",
+  "vit_base_patch16_224.augreg_in21k",
+  "vit_large_patch16_224.augreg_in21k",
+  "vit_base_patch16_224.mae",
+  "vit_large_patch16_224.mae",
+  "vit_huge_patch14_224.mae",
+  "vit_small_patch14_dinov2.lvd142m",
+  "vit_base_patch14_dinov2.lvd142m",
+  "vit_large_patch14_dinov2.lvd142m",
+  "vit_giant_patch14_dinov2.lvd142m",
+  "vit_base_patch16_clip_224.laion2b",
+  "vit_large_patch14_clip_224.laion2b",
+  "vit_huge_patch14_clip_224.laion2b",
+  "vit_base_patch16_clip_224.laion2b_ft_in12k",
+  "vit_large_patch14_clip_224.laion2b_ft_in12k",
+  "vit_huge_patch14_clip_224.laion2b_ft_in12k"
+ ],
+ "engine": "v3",
+ "trend": [
+  {
+   "variant": "huh",
+   "metric": "cka_max",
+   "pearson_vs_capability": 0.5061,
+   "spearman_vs_capability": 0.6119,
+   "mean_score": 0.3929,
+   "weakest_llm_score": 0.3366,
+   "strongest_llm_score": 0.3775
+  },
+  {
+   "variant": "huh",
+   "metric": "cka_cal",
+   "pearson_vs_capability": 0.3343,
+   "spearman_vs_capability": 0.3338,
+   "mean_score": 0.2576,
+   "weakest_llm_score": 0.2327,
+   "strongest_llm_score": 0.2463
+  },
+  {
+   "variant": "huh",
+   "metric": "cka_heldout_cal",
+   "pearson_vs_capability": 0.1788,
+   "spearman_vs_capability": 0.1748,
+   "mean_score": 0.289,
+   "weakest_llm_score": 0.2603,
+   "strongest_llm_score": 0.2621
+  },
+  {
+   "variant": "huh",
+   "metric": "ucka_max",
+   "pearson_vs_capability": 0.2823,
+   "spearman_vs_capability": 0.4201,
+   "mean_score": 0.3018,
+   "weakest_llm_score": 0.2715,
+   "strongest_llm_score": 0.2764
+  },
+  {
+   "variant": "huh",
+   "metric": "ucka_heldout",
+   "pearson_vs_capability": 0.2944,
+   "spearman_vs_capability": 0.3897,
+   "mean_score": 0.3045,
+   "weakest_llm_score": 0.2691,
+   "strongest_llm_score": 0.2774
+  },
+  {
+   "variant": "huh",
+   "metric": "mknn_max",
+   "pearson_vs_capability": 0.7314,
+   "spearman_vs_capability": 0.6979,
+   "mean_score": 0.1287,
+   "weakest_llm_score": 0.0975,
+   "strongest_llm_score": 0.1208
+  },
+  {
+   "variant": "huh",
+   "metric": "mknn_cal",
+   "pearson_vs_capability": 0.7322,
+   "spearman_vs_capability": 0.6985,
+   "mean_score": 0.1165,
+   "weakest_llm_score": 0.0848,
+   "strongest_llm_score": 0.1085
+  },
+  {
+   "variant": "noclip",
+   "metric": "cka_max",
+   "pearson_vs_capability": 0.5718,
+   "spearman_vs_capability": 0.6232,
+   "mean_score": 0.2366,
+   "weakest_llm_score": 0.166,
+   "strongest_llm_score": 0.3183
+  },
+  {
+   "variant": "noclip",
+   "metric": "cka_cal",
+   "pearson_vs_capability": 0.5321,
+   "spearman_vs_capability": 0.5186,
+   "mean_score": 0.1409,
+   "weakest_llm_score": 0.0791,
+   "strongest_llm_score": 0.2465
+  },
+  {
+   "variant": "noclip",
+   "metric": "cka_heldout_cal",
+   "pearson_vs_capability": 0.643,
+   "spearman_vs_capability": 0.6179,
+   "mean_score": 0.1862,
+   "weakest_llm_score": 0.0878,
+   "strongest_llm_score": 0.2619
+  },
+  {
+   "variant": "noclip",
+   "metric": "ucka_max",
+   "pearson_vs_capability": 0.6125,
+   "spearman_vs_capability": 0.5709,
+   "mean_score": 0.1866,
+   "weakest_llm_score": 0.0956,
+   "strongest_llm_score": 0.2636
+  },
+  {
+   "variant": "noclip",
+   "metric": "ucka_heldout",
+   "pearson_vs_capability": 0.6436,
+   "spearman_vs_capability": 0.6135,
+   "mean_score": 0.195,
+   "weakest_llm_score": 0.0938,
+   "strongest_llm_score": 0.2695
+  },
+  {
+   "variant": "noclip",
+   "metric": "mknn_max",
+   "pearson_vs_capability": 0.7801,
+   "spearman_vs_capability": 0.6513,
+   "mean_score": 0.0845,
+   "weakest_llm_score": 0.0611,
+   "strongest_llm_score": 0.0972
+  },
+  {
+   "variant": "noclip",
+   "metric": "mknn_cal",
+   "pearson_vs_capability": 0.7754,
+   "spearman_vs_capability": 0.6467,
+   "mean_score": 0.0709,
+   "weakest_llm_score": 0.0474,
+   "strongest_llm_score": 0.0839
+  },
+  {
+   "variant": "std",
+   "metric": "cka_max",
+   "pearson_vs_capability": 0.5516,
+   "spearman_vs_capability": 0.6362,
+   "mean_score": 0.3865,
+   "weakest_llm_score": 0.3146,
+   "strongest_llm_score": 0.3729
+  },
+  {
+   "variant": "std",
+   "metric": "cka_cal",
+   "pearson_vs_capability": 0.401,
+   "spearman_vs_capability": 0.484,
+   "mean_score": 0.2473,
+   "weakest_llm_score": 0.2088,
+   "strongest_llm_score": 0.2198
+  },
+  {
+   "variant": "std",
+   "metric": "cka_heldout_cal",
+   "pearson_vs_capability": 0.2425,
+   "spearman_vs_capability": 0.243,
+   "mean_score": 0.2859,
+   "weakest_llm_score": 0.2457,
+   "strongest_llm_score": 0.2569
+  },
+  {
+   "variant": "std",
+   "metric": "ucka_max",
+   "pearson_vs_capability": 0.3617,
+   "spearman_vs_capability": 0.464,
+   "mean_score": 0.2992,
+   "weakest_llm_score": 0.2545,
+   "strongest_llm_score": 0.2718
+  },
+  {
+   "variant": "std",
+   "metric": "ucka_heldout",
+   "pearson_vs_capability": 0.3593,
+   "spearman_vs_capability": 0.4338,
+   "mean_score": 0.3001,
+   "weakest_llm_score": 0.2527,
+   "strongest_llm_score": 0.2716
+  },
+  {
+   "variant": "std",
+   "metric": "mknn_max",
+   "pearson_vs_capability": 0.7196,
+   "spearman_vs_capability": 0.6813,
+   "mean_score": 0.1425,
+   "weakest_llm_score": 0.1069,
+   "strongest_llm_score": 0.1306
+  },
+  {
+   "variant": "std",
+   "metric": "mknn_cal",
+   "pearson_vs_capability": 0.7198,
+   "spearman_vs_capability": 0.6805,
+   "mean_score": 0.1305,
+   "weakest_llm_score": 0.0944,
+   "strongest_llm_score": 0.1184
+  }
+ ],
+ "tau_pred_fit": {
+  "corr": 0.9999938501674057,
+  "mae": 0.0021808139775338635
+ },
+ "tau_vs_capability": [
+  {
+   "llm": "NousResearch/Meta-Llama-3-70B",
+   "bpb": 1.5482,
+   "cka_tau": 0.2304,
+   "tau_pred": 0.2283,
+   "rmax_x": 393.976
+  },
+  {
+   "llm": "NousResearch/Meta-Llama-3-8B",
+   "bpb": 1.6363,
+   "cka_tau": 0.1818,
+   "tau_pred": 0.1797,
+   "rmax_x": 244.1038
+  },
+  {
+   "llm": "allenai/OLMo-1B-hf",
+   "bpb": 1.6391,
+   "cka_tau": 0.1431,
+   "tau_pred": 0.1408,
+   "rmax_x": 149.7684
+  },
+  {
+   "llm": "allenai/OLMo-7B-hf",
+   "bpb": 1.5218,
+   "cka_tau": 0.1747,
+   "tau_pred": 0.1724,
+   "rmax_x": 224.6299
+  },
+  {
+   "llm": "bigscience/bloomz-1b1",
+   "bpb": 1.8847,
+   "cka_tau": 0.1307,
+   "tau_pred": 0.1284,
+   "rmax_x": 124.559
+  },
+  {
+   "llm": "bigscience/bloomz-1b7",
+   "bpb": 1.9391,
+   "cka_tau": 0.1812,
+   "tau_pred": 0.1791,
+   "rmax_x": 242.3636
+  },
+  {
+   "llm": "bigscience/bloomz-3b",
+   "bpb": 1.8947,
+   "cka_tau": 0.1833,
+   "tau_pred": 0.1812,
+   "rmax_x": 248.1897
+  },
+  {
+   "llm": "bigscience/bloomz-560m",
+   "bpb": 2.0745,
+   "cka_tau": 0.1353,
+   "tau_pred": 0.1331,
+   "rmax_x": 133.7812
+  },
+  {
+   "llm": "bigscience/bloomz-7b1",
+   "bpb": 1.8393,
+   "cka_tau": 0.184,
+   "tau_pred": 0.1816,
+   "rmax_x": 249.3327
+  },
+  {
+   "llm": "google/gemma-2b",
+   "bpb": 1.8191,
+   "cka_tau": 0.154,
+   "tau_pred": 0.1518,
+   "rmax_x": 174.209
+  },
+  {
+   "llm": "google/gemma-7b",
+   "bpb": 1.7618,
+   "cka_tau": 0.1664,
+   "tau_pred": 0.1641,
+   "rmax_x": 203.4218
+  },
+  {
+   "llm": "huggyllama/llama-13b",
+   "bpb": 1.6208,
+   "cka_tau": 0.2041,
+   "tau_pred": 0.202,
+   "rmax_x": 308.4704
+  },
+  {
+   "llm": "huggyllama/llama-30b",
+   "bpb": 1.5755,
+   "cka_tau": 0.2201,
+   "tau_pred": 0.218,
+   "rmax_x": 359.2
+  },
+  {
+   "llm": "huggyllama/llama-65b",
+   "bpb": 1.5574,
+   "cka_tau": 0.2367,
+   "tau_pred": 0.2347,
+   "rmax_x": 416.4385
+  },
+  {
+   "llm": "huggyllama/llama-7b",
+   "bpb": 1.6476,
+   "cka_tau": 0.1866,
+   "tau_pred": 0.1845,
+   "rmax_x": 257.288
+  },
+  {
+   "llm": "mistralai/Mistral-7B-v0.1",
+   "bpb": 1.7021,
+   "cka_tau": 0.2068,
+   "tau_pred": 0.2048,
+   "rmax_x": 317.0513
+  },
+  {
+   "llm": "mistralai/Mixtral-8x7B-v0.1",
+   "bpb": 1.6409,
+   "cka_tau": 0.2182,
+   "tau_pred": 0.2162,
+   "rmax_x": 353.1621
+  },
+  {
+   "llm": "openlm-research/open_llama_13b",
+   "bpb": 1.6552,
+   "cka_tau": 0.1881,
+   "tau_pred": 0.186,
+   "rmax_x": 261.392
+  },
+  {
+   "llm": "openlm-research/open_llama_3b",
+   "bpb": 1.7185,
+   "cka_tau": 0.1655,
+   "tau_pred": 0.1634,
+   "rmax_x": 201.7734
+  },
+  {
+   "llm": "openlm-research/open_llama_7b",
+   "bpb": 1.6772,
+   "cka_tau": 0.1761,
+   "tau_pred": 0.174,
+   "rmax_x": 228.768
+  }
+ ],
+ "thresholds": [
+  {
+   "variant": "huh",
+   "cka_tau": 0.1893,
+   "cka_tau_fixedpair": 0.1644,
+   "cka_heldout_tau": 0.2097,
+   "nullmax_pair_freq": 1.0,
+   "nullmax_reff_x": 246.1468,
+   "nullmax_reff_y": 160.915,
+   "reff_x": 209.7083,
+   "reff_y": 137.5881
+  },
+  {
+   "variant": "noclip",
+   "cka_tau": 0.1179,
+   "cka_tau_fixedpair": 0.0668,
+   "cka_heldout_tau": 0.1026,
+   "nullmax_pair_freq": 1.0,
+   "nullmax_reff_x": 125.9576,
+   "nullmax_reff_y": 121.4742,
+   "reff_x": 69.3316,
+   "reff_y": 97.389
+  },
+  {
+   "variant": "std",
+   "cka_tau": 0.1921,
+   "cka_tau_fixedpair": 0.1464,
+   "cka_heldout_tau": 0.2008,
+   "nullmax_pair_freq": 1.0,
+   "nullmax_reff_x": 283.0798,
+   "nullmax_reff_y": 152.6441,
+   "reff_x": 220.4689,
+   "reff_y": 122.8315
+  }
+ ],
+ "reff_over_n": [
+  {
+   "modality": "language",
+   "variant": "huh",
+   "min": 0.0019,
+   "50%": 0.1095,
+   "max": 0.4067
+  },
+  {
+   "modality": "language",
+   "variant": "noclip",
+   "min": 0.0013,
+   "50%": 0.0083,
+   "max": 0.2046
+  },
+  {
+   "modality": "language",
+   "variant": "std",
+   "min": 0.0046,
+   "50%": 0.1328,
+   "max": 0.3924
+  },
+  {
+   "modality": "vision",
+   "variant": "huh",
+   "min": 0.0037,
+   "50%": 0.02,
+   "max": 0.2472
+  },
+  {
+   "modality": "vision",
+   "variant": "noclip",
+   "min": 0.0026,
+   "50%": 0.017,
+   "max": 0.1961
+  },
+  {
+   "modality": "vision",
+   "variant": "std",
+   "min": 0.006,
+   "50%": 0.0297,
+   "max": 0.2192
+  }
+ ],
+ "llm_top1_var_share": {
+  "NousResearch/Meta-Llama-3-70B": 0.9664,
+  "NousResearch/Meta-Llama-3-8B": 0.3741,
+  "allenai/OLMo-1B-hf": 0.9551,
+  "allenai/OLMo-7B-hf": 0.9907,
+  "bigscience/bloomz-1b1": 0.9767,
+  "bigscience/bloomz-1b7": 0.9936,
+  "bigscience/bloomz-3b": 0.9899,
+  "bigscience/bloomz-560m": 0.9749,
+  "bigscience/bloomz-7b1": 0.9932,
+  "google/gemma-2b": 0.5031,
+  "google/gemma-7b": 0.7785,
+  "huggyllama/llama-13b": 0.9743,
+  "huggyllama/llama-30b": 0.9871,
+  "huggyllama/llama-65b": 0.9636,
+  "huggyllama/llama-7b": 0.9841,
+  "mistralai/Mistral-7B-v0.1": 0.9756,
+  "mistralai/Mixtral-8x7B-v0.1": 0.9865,
+  "openlm-research/open_llama_13b": 0.4592,
+  "openlm-research/open_llama_3b": 0.4655,
+  "openlm-research/open_llama_7b": 0.9524
+ },
+ "pred_shrink": [
+  {
+   "variant": "huh",
+   "min": 0.755,
+   "50%": 0.8552,
+   "max": 0.9574
+  },
+  {
+   "variant": "noclip",
+   "min": 0.8331,
+   "50%": 0.9297,
+   "max": 0.9888
+  },
+  {
+   "variant": "std",
+   "min": 0.7679,
+   "50%": 0.8674,
+   "max": 0.9562
+  }
+ ],
+ "failures": [
+  "10:48:52 SKIPPING huggyllama/llama-30b: needs ~76 GB free disk, have 63 GB",
+  "10:48:52 SKIPPING huggyllama/llama-65b: needs ~142 GB free disk, have 63 GB",
+  "11:17:42 SKIPPING huggyllama/llama-65b: needs ~142 GB free disk, have 140 GB",
+  "11:29:25 SKIPPING huggyllama/llama-65b: needs ~145 GB free disk, have 137 GB",
+  "14:16:01 LLM FAILED: mistralai/Mixtral-8x7B-v0.1 OutOfMemoryError('CUDA out of memory. Tried to allocate 908.00 MiB. GPU 0 has a total capacity of 94.97 GiB of which 793.88 MiB is free. Including non-PyTorch memory, this process has 94.19 GiB memory in use. Of the allocated memory 92.06 GiB is allocated by PyTorch, and 1.49 GiB is reserved by PyTo",
+  "14:16:01 SKIPPING huggyllama/llama-65b: download needs 139 GB disk, 27 GB free",
+  "14:16:01 SKIPPING NousResearch/Meta-Llama-3-70B: download needs 149 GB disk, 27 GB free",
+  "14:41:13 LLM FAILED: mistralai/Mixtral-8x7B-v0.1 OutOfMemoryError('CUDA out of memory. Tried to allocate 908.00 MiB. GPU 0 has a total capacity of 94.97 GiB of which 393.88 MiB is free. Including non-PyTorch memory, this process has 94.58 GiB memory in use. Of the allocated memory 92.06 GiB is allocated by PyTorch, and 1.88 GiB is reserved by PyTo",
+  "14:41:13 SKIPPING huggyllama/llama-65b: download needs 139 GB disk, 113 GB free",
+  "14:41:13 SKIPPING NousResearch/Meta-Llama-3-70B: download needs 149 GB disk, 113 GB free",
+  "15:24:36 SKIPPING huggyllama/llama-65b: download needs 139 GB disk, 112 GB free",
+  "15:24:36 SKIPPING NousResearch/Meta-Llama-3-70B: download needs 149 GB disk, 112 GB free",
+  "15:48:48 LLM FAILED: huggyllama/llama-65b (exit code 1); last lines of /content/drive/MyDrive/prh_audit/full/llm_worker_huggyllama_llama-65b.txt:"
+ ],
+ "preflight": [
+  "14:01:33 pre-flight: allenai/OLMo-1B-hf {'weights_gb': 4.7, 'format': 'safetensors', 'gpu_gb': 102.0, 'cpu_free_gb': 165.0, 'disk_free_gb': 206.1, 'mode': 'gpu'}",
+  "14:02:00 pre-flight: google/gemma-2b {'weights_gb': 5.0, 'format': 'safetensors', 'gpu_gb': 102.0, 'cpu_free_gb': 163.7, 'disk_free_gb': 201.3, 'mode': 'gpu'}",
+  "14:02:41 pre-flight: mistralai/Mistral-7B-v0.1 {'weights_gb': 14.5, 'format': 'safetensors', 'gpu_gb': 102.0, 'cpu_free_gb': 163.7, 'disk_free_gb': 196.2, 'mode': 'gpu'}",
+  "14:03:42 pre-flight: NousResearch/Meta-Llama-3-8B {'weights_gb': 16.1, 'format': 'safetensors', 'gpu_gb': 102.0, 'cpu_free_gb': 162.8, 'disk_free_gb': 181.5, 'mode': 'gpu'}",
+  "14:04:52 pre-flight: google/gemma-7b {'weights_gb': 17.1, 'format': 'safetensors', 'gpu_gb': 102.0, 'cpu_free_gb': 161.6, 'disk_free_gb': 165.1, 'mode': 'gpu'}",
+  "14:06:20 pre-flight: allenai/OLMo-7B-hf {'weights_gb': 27.6, 'format': 'safetensors', 'gpu_gb': 102.0, 'cpu_free_gb': 161.4, 'disk_free_gb': 147.9, 'mode': 'gpu'}",
+  "14:08:00 pre-flight: mistralai/Mixtral-8x7B-v0.1 {'weights_gb': 93.4, 'format': 'safetensors', 'gpu_gb': 102.0, 'cpu_free_gb': 160.2, 'disk_free_gb': 120.0, 'mode': 'gpu+cpu'}",
+  "14:16:01 pre-flight: huggyllama/llama-65b {'weights_gb': 130.6, 'format': 'safetensors', 'gpu_gb': 102.0, 'cpu_free_gb': 160.0, 'disk_free_gb': 26.6, 'mode': 'skip', 'reason': 'download needs 139 GB disk, 27 GB free'}",
+  "14:16:01 pre-flight: NousResearch/Meta-Llama-3-70B {'weights_gb': 141.1, 'format': 'safetensors', 'gpu_gb': 102.0, 'cpu_free_gb': 160.0, 'disk_free_gb': 26.6, 'mode': 'skip', 'reason': 'download needs 149 GB disk, 27 GB free'}",
+  "14:33:55 pre-flight: mistralai/Mixtral-8x7B-v0.1 {'weights_gb': 93.4, 'format': 'safetensors', 'gpu_gb': 102.0, 'cpu_free_gb': 165.1, 'disk_free_gb': 206.2, 'mode': 'gpu+cpu'}",
+  "14:41:13 pre-flight: huggyllama/llama-65b {'weights_gb': 130.6, 'format': 'safetensors', 'gpu_gb': 102.0, 'cpu_free_gb': 163.0, 'disk_free_gb': 112.8, 'mode': 'skip', 'reason': 'download needs 139 GB disk, 113 GB free'}",
+  "14:41:13 pre-flight: NousResearch/Meta-Llama-3-70B {'weights_gb': 141.1, 'format': 'safetensors', 'gpu_gb': 102.0, 'cpu_free_gb': 163.0, 'disk_free_gb': 112.8, 'mode': 'skip', 'reason': 'download needs 149 GB disk, 113 GB free'}",
+  "15:15:32 pre-flight: mistralai/Mixtral-8x7B-v0.1 {'weights_gb': 93.4, 'weights_gib': 87.0, 'format': 'safetensors', 'gpu_gib': 95.0, 'cpu_free_gib': 153.7, 'disk_free_gb': 206.2, 'mode': 'gpu+cpu'} max_memory: {0: '80GiB', 'cpu': '137GiB'}",
+  "15:24:36 pre-flight: huggyllama/llama-65b {'weights_gb': 130.6, 'weights_gib': 121.6, 'format': 'safetensors', 'gpu_gib': 95.0, 'cpu_free_gib': 153.3, 'disk_free_gb': 112.5, 'mode': 'skip', 'reason': 'download needs 139 GB disk, 112 GB free'} max_memory: None",
+  "15:24:36 pre-flight: NousResearch/Meta-Llama-3-70B {'weights_gb': 141.1, 'weights_gib': 131.4, 'format': 'safetensors', 'gpu_gib': 95.0, 'cpu_free_gib': 153.3, 'disk_free_gb': 112.5, 'mode': 'skip', 'reason': 'download needs 149 GB disk, 112 GB free'} max_memory: None",
+  "15:35:45 pre-flight: huggyllama/llama-65b {'weights_gb': 130.6, 'weights_gib': 121.6, 'format': 'safetensors', 'gpu_gib': 95.0, 'cpu_free_gib': 137.0, 'disk_free_gb': 206.0, 'mode': 'gpu+cpu'} max_memory: {0: '80GiB', 'cpu': '121GiB'}",
+  "15:48:48 pre-flight: NousResearch/Meta-Llama-3-70B {'weights_gb': 141.1, 'weights_gib': 131.4, 'format': 'safetensors', 'gpu_gib': 95.0, 'cpu_free_gib': 135.3, 'disk_free_gb': 205.9, 'mode': 'gpu+cpu'} max_memory: {0: '80GiB', 'cpu': '119GiB'}",
+  "15:59:04 pre-flight: huggyllama/llama-65b {'weights_gb': 130.6, 'weights_gib': 121.6, 'format': 'safetensors', 'gpu_gib': 95.0, 'cpu_free_gib': 136.7, 'disk_free_gb': 206.2, 'mode': 'gpu+cpu'} max_memory: {0: '80GiB', 'cpu': '120GiB'}",
+  "16:52:02 pre-flight: NousResearch/Meta-Llama-3-70B {'weights_gb': 141.1, 'weights_gib': 131.4, 'format': 'safetensors', 'gpu_gib': 95.0, 'cpu_free_gib': 153.8, 'disk_free_gb': 206.1, 'mode': 'gpu+cpu'} max_memory: {0: '80GiB', 'cpu': '137GiB'}"
+ ],
+ "saturation": [
+  {
+   "axis": "cap",
+   "family_fe": false,
+   "metric": "ucka_heldout",
+   "slope_below": 0.11402,
+   "ci_below": [
+    0.09603419025965346,
+    0.12982739663448312
+   ],
+   "slope_above": 0.01718,
+   "ci_above": [
+    -0.005904630144215794,
+    0.038029301037942
+   ]
+  },
+  {
+   "axis": "cap",
+   "family_fe": false,
+   "metric": "mknn_max",
+   "slope_below": 0.11491,
+   "ci_below": [
+    0.09859125577423038,
+    0.13028346934926355
+   ],
+   "slope_above": -0.00074,
+   "ci_above": [
+    -0.010481508253497047,
+    0.008151263371203216
+   ]
+  },
+  {
+   "axis": "cap",
+   "family_fe": false,
+   "metric": "cka_max",
+   "slope_below": 0.19184,
+   "ci_below": [
+    0.15388877094252165,
+    0.22651393120471466
+   ],
+   "slope_above": 0.17967,
+   "ci_above": [
+    0.1434826237883922,
+    0.21664124512430868
+   ]
+  },
+  {
+   "axis": "cap",
+   "family_fe": false,
+   "metric": "cka_cal",
+   "slope_below": 0.15124,
+   "ci_below": [
+    0.11253080484624592,
+    0.18864549166469777
+   ],
+   "slope_above": 0.01861,
+   "ci_above": [
+    -0.007511476845752749,
+    0.045716726022335424
+   ]
+  },
+  {
+   "axis": "cap",
+   "family_fe": true,
+   "metric": "ucka_heldout",
+   "slope_below": 0.025,
+   "ci_below": [
+    0.018168580486554134,
+    0.03172732360216779
+   ],
+   "slope_above": 0.10798,
+   "ci_above": [
+    0.09450020664714007,
+    0.1189090741052387
+   ]
+  },
+  {
+   "axis": "cap",
+   "family_fe": true,
+   "metric": "mknn_max",
+   "slope_below": 0.05764,
+   "ci_below": [
+    0.049755499552035246,
+    0.06578388763537939
+   ],
+   "slope_above": 0.10556,
+   "ci_above": [
+    0.0953562582601194,
+    0.11459799368738753
+   ]
+  },
+  {
+   "axis": "cap",
+   "family_fe": true,
+   "metric": "cka_max",
+   "slope_below": 0.05987,
+   "ci_below": [
+    0.045287390987728986,
+    0.07258092523057988
+   ],
+   "slope_above": 0.35473,
+   "ci_above": [
+    0.28750972819114556,
+    0.4210701141857674
+   ]
+  },
+  {
+   "axis": "cap",
+   "family_fe": true,
+   "metric": "cka_cal",
+   "slope_below": -0.07729,
+   "ci_below": [
+    -0.08973867422119242,
+    -0.06527701729655548
+   ],
+   "slope_above": 0.06045,
+   "ci_above": [
+    0.02408004009985642,
+    0.09879792320956073
+   ]
+  },
+  {
+   "axis": "log2p",
+   "family_fe": false,
+   "metric": "ucka_heldout",
+   "slope_below": 0.00898,
+   "ci_below": [
+    0.007433372092260055,
+    0.010383491375357316
+   ],
+   "slope_above": 0.0076,
+   "ci_above": [
+    0.007020904954898199,
+    0.008178792426569808
+   ]
+  },
+  {
+   "axis": "log2p",
+   "family_fe": false,
+   "metric": "mknn_max",
+   "slope_below": 0.01073,
+   "ci_below": [
+    0.009274001420195726,
+    0.012084195450386581
+   ],
+   "slope_above": 0.00469,
+   "ci_above": [
+    0.004076265163736517,
+    0.0052274700112963195
+   ]
+  },
+  {
+   "axis": "log2p",
+   "family_fe": false,
+   "metric": "cka_max",
+   "slope_below": 0.01657,
+   "ci_below": [
+    0.013387219570408183,
+    0.019493646197832587
+   ],
+   "slope_above": 0.01611,
+   "ci_above": [
+    0.013436183866297751,
+    0.018736794283662733
+   ]
+  },
+  {
+   "axis": "log2p",
+   "family_fe": false,
+   "metric": "cka_cal",
+   "slope_below": 0.00821,
+   "ci_below": [
+    0.005455453848615465,
+    0.010855603722622897
+   ],
+   "slope_above": 0.00684,
+   "ci_above": [
+    0.004996985664145948,
+    0.008738269067716905
+   ]
+  },
+  {
+   "axis": "log2p",
+   "family_fe": true,
+   "metric": "ucka_heldout",
+   "slope_below": 0.00061,
+   "ci_below": [
+    -4.364397317216385e-05,
+    0.0012494196709871735
+   ],
+   "slope_above": -0.00221,
+   "ci_above": [
+    -0.0029985735716938906,
+    -0.0015169186228604305
+   ]
+  },
+  {
+   "axis": "log2p",
+   "family_fe": true,
+   "metric": "mknn_max",
+   "slope_below": 0.00479,
+   "ci_below": [
+    0.004201994021872433,
+    0.005348937047079129
+   ],
+   "slope_above": 0.00129,
+   "ci_above": [
+    0.0010877754742634224,
+    0.0014858390478643974
+   ]
+  },
+  {
+   "axis": "log2p",
+   "family_fe": true,
+   "metric": "cka_max",
+   "slope_below": 0.00539,
+   "ci_below": [
+    0.004015109931931229,
+    0.00664020021630138
+   ],
+   "slope_above": 0.00487,
+   "ci_above": [
+    0.0027907348577917413,
+    0.006915964313902217
+   ]
+  },
+  {
+   "axis": "log2p",
+   "family_fe": true,
+   "metric": "cka_cal",
+   "slope_below": -0.00645,
+   "ci_below": [
+    -0.007367635865725405,
+    -0.005633450298339142
+   ],
+   "slope_above": -0.00463,
+   "ci_above": [
+    -0.005914644715707535,
+    -0.0033324607125771078
+   ]
+  }
+ ],
+ "family_slopes": [
+  {
+   "family": "BLOOMZ",
+   "n_llms": 5,
+   "metric": "ucka_heldout",
+   "slope_per_doubling": 0.01027,
+   "ci_low": 0.0091,
+   "ci_high": 0.01155
+  },
+  {
+   "family": "BLOOMZ",
+   "n_llms": 5,
+   "metric": "mknn_max",
+   "slope_per_doubling": 0.00529,
+   "ci_low": 0.00453,
+   "ci_high": 0.00606
+  },
+  {
+   "family": "BLOOMZ",
+   "n_llms": 5,
+   "metric": "cka_max",
+   "slope_per_doubling": 0.01183,
+   "ci_low": 0.01022,
+   "ci_high": 0.01339
+  },
+  {
+   "family": "BLOOMZ",
+   "n_llms": 5,
+   "metric": "cka_cal",
+   "slope_per_doubling": -0.00061,
+   "ci_low": -0.00268,
+   "ci_high": 0.0016
+  },
+  {
+   "family": "Gemma",
+   "n_llms": 2,
+   "metric": "ucka_heldout",
+   "slope_per_doubling": -0.0945,
+   "ci_low": -0.10186,
+   "ci_high": -0.0871
+  },
+  {
+   "family": "Gemma",
+   "n_llms": 2,
+   "metric": "mknn_max",
+   "slope_per_doubling": -0.00824,
+   "ci_low": -0.00927,
+   "ci_high": -0.00719
+  },
+  {
+   "family": "Gemma",
+   "n_llms": 2,
+   "metric": "cka_max",
+   "slope_per_doubling": -0.08028,
+   "ci_low": -0.08856,
+   "ci_high": -0.07266
+  },
+  {
+   "family": "Gemma",
+   "n_llms": 2,
+   "metric": "cka_cal",
+   "slope_per_doubling": -0.10268,
+   "ci_low": -0.11279,
+   "ci_high": -0.09399
+  },
+  {
+   "family": "LLaMA",
+   "n_llms": 4,
+   "metric": "ucka_heldout",
+   "slope_per_doubling": -0.00231,
+   "ci_low": -0.00322,
+   "ci_high": -0.00145
+  },
+  {
+   "family": "LLaMA",
+   "n_llms": 4,
+   "metric": "mknn_max",
+   "slope_per_doubling": 0.00127,
+   "ci_low": 0.00103,
+   "ci_high": 0.00151
+  },
+  {
+   "family": "LLaMA",
+   "n_llms": 4,
+   "metric": "cka_max",
+   "slope_per_doubling": 0.00608,
+   "ci_low": 0.00344,
+   "ci_high": 0.00849
+  },
+  {
+   "family": "LLaMA",
+   "n_llms": 4,
+   "metric": "cka_cal",
+   "slope_per_doubling": -0.00556,
+   "ci_low": -0.00707,
+   "ci_high": -0.00407
+  },
+  {
+   "family": "Llama-3",
+   "n_llms": 2,
+   "metric": "ucka_heldout",
+   "slope_per_doubling": 0.00115,
+   "ci_low": -0.00028,
+   "ci_high": 0.00241
+  },
+  {
+   "family": "Llama-3",
+   "n_llms": 2,
+   "metric": "mknn_max",
+   "slope_per_doubling": 0.00117,
+   "ci_low": 0.00094,
+   "ci_high": 0.00142
+  },
+  {
+   "family": "Llama-3",
+   "n_llms": 2,
+   "metric": "cka_max",
+   "slope_per_doubling": 0.00791,
+   "ci_low": 0.00569,
+   "ci_high": 0.01015
+  },
+  {
+   "family": "Llama-3",
+   "n_llms": 2,
+   "metric": "cka_cal",
+   "slope_per_doubling": -0.00378,
+   "ci_low": -0.00518,
+   "ci_high": -0.00232
+  },
+  {
+   "family": "Mistral",
+   "n_llms": 2,
+   "metric": "ucka_heldout",
+   "slope_per_doubling": 0.00015,
+   "ci_low": -0.0005,
+   "ci_high": 0.00075
+  },
+  {
+   "family": "Mistral",
+   "n_llms": 2,
+   "metric": "mknn_max",
+   "slope_per_doubling": 0.0021,
+   "ci_low": 0.00161,
+   "ci_high": 0.00253
+  },
+  {
+   "family": "Mistral",
+   "n_llms": 2,
+   "metric": "cka_max",
+   "slope_per_doubling": 0.00429,
+   "ci_low": 0.00305,
+   "ci_high": 0.00543
+  },
+  {
+   "family": "Mistral",
+   "n_llms": 2,
+   "metric": "cka_cal",
+   "slope_per_doubling": 0.00167,
+   "ci_low": 0.00066,
+   "ci_high": 0.00259
+  },
+  {
+   "family": "OLMo",
+   "n_llms": 2,
+   "metric": "ucka_heldout",
+   "slope_per_doubling": 0.0137,
+   "ci_low": 0.01223,
+   "ci_high": 0.01521
+  },
+  {
+   "family": "OLMo",
+   "n_llms": 2,
+   "metric": "mknn_max",
+   "slope_per_doubling": 0.00847,
+   "ci_low": 0.00762,
+   "ci_high": 0.00928
+  },
+  {
+   "family": "OLMo",
+   "n_llms": 2,
+   "metric": "cka_max",
+   "slope_per_doubling": 0.02289,
+   "ci_low": 0.02014,
+   "ci_high": 0.02545
+  },
+  {
+   "family": "OLMo",
+   "n_llms": 2,
+   "metric": "cka_cal",
+   "slope_per_doubling": 0.01599,
+   "ci_low": 0.01367,
+   "ci_high": 0.01813
+  },
+  {
+   "family": "OpenLLaMA",
+   "n_llms": 3,
+   "metric": "ucka_heldout",
+   "slope_per_doubling": 0.00211,
+   "ci_low": 0.00119,
+   "ci_high": 0.00304
+  },
+  {
+   "family": "OpenLLaMA",
+   "n_llms": 3,
+   "metric": "mknn_max",
+   "slope_per_doubling": 0.00399,
+   "ci_low": 0.0036,
+   "ci_high": 0.00436
+  },
+  {
+   "family": "OpenLLaMA",
+   "n_llms": 3,
+   "metric": "cka_max",
+   "slope_per_doubling": 0.00836,
+   "ci_low": 0.00618,
+   "ci_high": 0.01077
+  },
+  {
+   "family": "OpenLLaMA",
+   "n_llms": 3,
+   "metric": "cka_cal",
+   "slope_per_doubling": 0.00031,
+   "ci_low": -0.0018,
+   "ci_high": 0.00237
+  }
+ ],
+ "replication_size_rank": {
+  "cka_max": 0.8652468494912189,
+  "cka_cal": 0.4666836879336801,
+  "ucka_heldout": 0.7235699706184048,
+  "mknn_max": 0.8514973386763703,
+  "mknn_cal": 0.8505095035996527
+ },
+ "nf4_vs_bf16": {
+  "nf4": {
+   "cka_max": 0.44583,
+   "cka_cal": 0.27521,
+   "ucka_heldout": 0.32653,
+   "mknn_max": 0.14723,
+   "cka_tau": 0.23713,
+   "bpb": NaN
+  },
+  "bf16": {
+   "cka_max": 0.4467,
+   "cka_cal": 0.27665,
+   "ucka_heldout": 0.32851,
+   "mknn_max": 0.14795,
+   "cka_tau": 0.23673,
+   "bpb": 1.55739
+  }
+ },
+ "llm_meta": [
+  {
+   "llm": "bigscience/bloomz-560m",
+   "bpb": 2.074496030807495,
+   "loss": 6.341678619384766,
+   "llm_params": 559214592,
+   "llm_family": "BLOOMZ",
+   "precision": "bf16",
+   "placement": "gpu"
+  },
+  {
+   "llm": "bigscience/bloomz-1b1",
+   "bpb": 1.884720802307129,
+   "loss": 5.763200283050537,
+   "llm_params": 1065314304,
+   "llm_family": "BLOOMZ",
+   "precision": "bf16",
+   "placement": "gpu"
+  },
+  {
+   "llm": "bigscience/bloomz-1b7",
+   "bpb": 1.9390619993209839,
+   "loss": 5.946202278137207,
+   "llm_params": 1722408960,
+   "llm_family": "BLOOMZ",
+   "precision": "bf16",
+   "placement": "gpu"
+  },
+  {
+   "llm": "bigscience/bloomz-3b",
+   "bpb": 1.8946614265441895,
+   "loss": 5.805481433868408,
+   "llm_params": 3002557440,
+   "llm_family": "BLOOMZ",
+   "precision": "bf16",
+   "placement": "gpu"
+  },
+  {
+   "llm": "bigscience/bloomz-7b1",
+   "bpb": 1.8393055200576782,
+   "loss": 5.649899482727051,
+   "llm_params": 7069016064,
+   "llm_family": "BLOOMZ",
+   "precision": "bf16",
+   "placement": "gpu"
+  },
+  {
+   "llm": "openlm-research/open_llama_3b",
+   "bpb": 1.718471884727478,
+   "loss": 4.091090202331543,
+   "llm_params": 3426473600,
+   "llm_family": "OpenLLaMA",
+   "precision": "bf16",
+   "placement": "gpu"
+  },
+  {
+   "llm": "openlm-research/open_llama_7b",
+   "bpb": 1.6772191524505615,
+   "loss": 3.994213104248047,
+   "llm_params": 6738415616,
+   "llm_family": "OpenLLaMA",
+   "precision": "bf16",
+   "placement": "gpu"
+  },
+  {
+   "llm": "openlm-research/open_llama_13b",
+   "bpb": 1.6552304029464722,
+   "loss": 3.9464762210845947,
+   "llm_params": 13015864320,
+   "llm_family": "OpenLLaMA",
+   "precision": "bf16",
+   "placement": "gpu"
+  },
+  {
+   "llm": "huggyllama/llama-7b",
+   "bpb": 1.6475731134414673,
+   "loss": 3.6773815155029297,
+   "llm_params": 6738415616,
+   "llm_family": "LLaMA",
+   "precision": "bf16",
+   "placement": "gpu"
+  },
+  {
+   "llm": "huggyllama/llama-13b",
+   "bpb": 1.6208041906356812,
+   "loss": 3.618588447570801,
+   "llm_params": 13015864320,
+   "llm_family": "LLaMA",
+   "precision": "bf16",
+   "placement": "gpu"
+  },
+  {
+   "llm": "huggyllama/llama-30b",
+   "bpb": 1.5754517316818237,
+   "loss": 3.5164377689361572,
+   "llm_params": 32528943616,
+   "llm_family": "LLaMA",
+   "precision": "bf16",
+   "placement": "gpu"
+  },
+  {
+   "llm": "huggyllama/llama-65b",
+   "bpb": 1.5573945045471191,
+   "loss": 3.4775278568267822,
+   "llm_params": 65285660672,
+   "llm_family": "LLaMA",
+   "precision": "bf16",
+   "placement": "gpu+cpu"
+  },
+  {
+   "llm": "allenai/OLMo-1B-hf",
+   "bpb": 1.6391037702560425,
+   "loss": 4.823206901550293,
+   "llm_params": 1176764416,
+   "llm_family": "OLMo",
+   "precision": "bf16",
+   "placement": "gpu"
+  },
+  {
+   "llm": "allenai/OLMo-7B-hf",
+   "bpb": 1.521848440170288,
+   "loss": 4.498847007751465,
+   "llm_params": 6888095744,
+   "llm_family": "OLMo",
+   "precision": "bf16",
+   "placement": "gpu"
+  },
+  {
+   "llm": "google/gemma-2b",
+   "bpb": 1.8190932273864746,
+   "loss": 4.845940589904785,
+   "llm_params": 2506172416,
+   "llm_family": "Gemma",
+   "precision": "bf16",
+   "placement": "gpu"
+  },
+  {
+   "llm": "google/gemma-7b",
+   "bpb": 1.7617520093917847,
+   "loss": 4.6964006423950195,
+   "llm_params": 8537680896,
+   "llm_family": "Gemma",
+   "precision": "bf16",
+   "placement": "gpu"
+  },
+  {
+   "llm": "mistralai/Mistral-7B-v0.1",
+   "bpb": 1.7020951509475708,
+   "loss": 3.828397274017334,
+   "llm_params": 7241732096,
+   "llm_family": "Mistral",
+   "precision": "bf16",
+   "placement": "gpu"
+  },
+  {
+   "llm": "mistralai/Mixtral-8x7B-v0.1",
+   "bpb": 1.6409494876861572,
+   "loss": 3.692641496658325,
+   "llm_params": 46702792704,
+   "llm_family": "Mistral",
+   "precision": "bf16",
+   "placement": "gpu+cpu"
+  },
+  {
+   "llm": "NousResearch/Meta-Llama-3-8B",
+   "bpb": 1.6363009214401245,
+   "loss": 4.221241474151611,
+   "llm_params": 8030261248,
+   "llm_family": "Llama-3",
+   "precision": "bf16",
+   "placement": "gpu"
+  },
+  {
+   "llm": "NousResearch/Meta-Llama-3-70B",
+   "bpb": 1.548228144645691,
+   "loss": 3.990471601486206,
+   "llm_params": 70553706496,
+   "llm_family": "Llama-3",
+   "precision": "bf16",
+   "placement": "gpu+cpu"
+  }
+ ]
+}

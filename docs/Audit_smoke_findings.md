@@ -1,0 +1,10 @@
+# Audit smoke run on real models (11 Oct 2026)
+
+Run: 3 BLOOMZ (560m, 1b1, 1b7) × 2 ViTs (in21k-tiny, DINOv2-small), WIT-1024, 50 permutations, Huh et al. pipeline. Too small for trend claims; these findings are about mechanisms.
+
+1. **Massive activations confirmed.** BLOOMZ layers 5–22 of 25: one dimension holds 95–99% of variance (max/median |x| ≈ 2,000–7,000×), so effective rank ≈ 1. Without clipping, raw CKA roughly halves (0.15–0.22 vs 0.30–0.35) and the best layers move to layers 2–3. Huh's 95th-percentile clip (or per-dimension standardization) fixes it: effective rank goes to 60–240. So outliers matter, but Huh's pipeline already handles them. Whether the Aristotelian paper kept that clip is unknown and needs checking.
+2. **The E1 shrinkage at the aligned layers is small.** After clipping, LLM r/n ≈ 0.06–0.24, so predicted shrinkage is only 0.91–0.96. That doesn't explain the observed calibrated/unbiased ratio of 0.62–0.88.
+3. **The aggregate threshold is set by the highest-effective-rank layers (v2 run, confirmed).** The Aristotelian max-over-all-layer-pairs threshold equals √(max_l r_x(l) · max_l r_y(l)) / n: correlation 1.00, mean absolute error 0.0025 across 18 runs. That is the E1 chance offset of the single highest-rank layer on each side. For BLOOMZ this is the embedding layer (layer 0, r = 125–242), while alignment peaks at layers 22–23 (r ≈ 80–100). So τ_agg (0.13–0.17 with DINOv2) is about 4× the threshold for the selected pair (0.034–0.039). Calibrated CKA is 0.20–0.26 while the unbiased estimate is 0.30–0.33. Held-out unbiased ≈ max (selection bias ≈ 0.003). Prediction for the full run: if the highest layer rank grows with LLM size, the Aristotelian calibrated score is suppressed for larger LLMs (artifactual flattening), and the effect is predictable from effective ranks alone.
+4. **Bugs fixed.** v2: unbiased CKA overflowed for near-constant layers (fp32), fixed with fp64 and NaN for degenerate layers. v3: held-out calibrated CKA had selected the layer pair by raw CKA, which favours high-rank pairs; it now selects by unbiased CKA.
+
+Next: full 12 LLM × 17 ViT run with notebook v3.

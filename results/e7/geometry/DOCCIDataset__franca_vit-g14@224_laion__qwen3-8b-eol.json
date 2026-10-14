@@ -1,0 +1,1 @@
+{"task": {"kind": "geometry", "dataset": "DOCCIDataset", "vision": "franca_vit-g14@224_laion", "language": "qwen3-8b-eol"}, "metrics": {"cka": 0.3539467806241884, "mutual_knn": 0.07495000213384628, "tsi": 0.5823930501937866, "qsi": 0.5655770301818848}, "seconds": 24.626832008361816}

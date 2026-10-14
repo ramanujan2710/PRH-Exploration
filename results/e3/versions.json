@@ -1,0 +1,13 @@
+{
+ "python": "3.13.15",
+ "torch": "2.11.0+cu130",
+ "numpy": "2.1.3",
+ "scipy": "1.16.3",
+ "sklearn": "1.6.1",
+ "pylibmgm": "?",
+ "rosetta": "fdfad84ea488f29702a61a455be71622c4ff5d49",
+ "aristotelian": "785054b19c952dca0f605768552ddd50fa9286dc",
+ "cpus": 48,
+ "ram_gb": 190,
+ "gpu": "NVIDIA RTX PRO 6000 Blackwell Server Edition"
+}

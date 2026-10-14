@@ -1,0 +1,17 @@
+check,result,detail
+no extraction failures,PASS,[]
+all feature files present,PASS,[]
+features: N = 1024 rows and all finite,PASS,[]
+last layer read out = the model's own output (last_hidden_state),PASS,"[True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True]"
+readouts differ (Qwen3-0.6B-Base: mean vs last),PASS,63.546875
+readouts differ (Qwen3-4B-Base: mean vs last),PASS,78.375
+readouts differ (Qwen3-8B-Base: mean vs last),PASS,99.5
+readouts differ (Qwen3-Embedding-0.6B: last vs mean),PASS,23.4375
+readouts differ (Qwen3-Embedding-4B: last vs mean),PASS,26.34375
+readouts differ (Qwen3-Embedding-8B: last vs mean),PASS,68.9375
+readouts differ (all-mpnet-base-v2: mean vs cls),PASS,0.3173828125
+mpnet mean readout = sentence-transformers embedding (min cosine > 0.999),PASS,0.999999
+alignment rows complete,PASS,816 vs 816
+"calibrated CKA in [0, 1] and <= raw",PASS,
+"threshold = chance level of the highest-rank layer pair (r > 0.99, as in E2)",PASS,0.99999
+null: shuffled pairs give calibrated CKA = 0 (>= 9/10),PASS,10/10

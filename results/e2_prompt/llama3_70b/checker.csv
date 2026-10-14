@@ -1,0 +1,25 @@
+check,result,detail
+no extraction failures,FAIL,['14:43:21 LLM FAILED: huggyllama/llama-65b (exit code 1):']
+feature files present (this session's models),PASS,[]
+"features: 1024 rows, all finite",PASS,[]
+prompted readouts sit on the template's final token for every caption,PASS,"{'bloomz-560m/eol': (':""', 1), 'bloomz-560m/eol_alt': (':""', 1), 'bloomz-560m/neutral': (' then', 1), 'bloomz-1b1/eol': (':""', 1), 'bloomz-1b1/eol_alt': (':""', 1), 'bloomz-1b1/neutral': (' then', 1)}"
+readouts differ (bloomz-560m: eol vs eol_alt),PASS,1098.0
+readouts differ (bloomz-1b1: eol vs eol_alt),PASS,385.671875
+readouts differ (bloomz-1b7: eol vs eol_alt),PASS,350.0
+readouts differ (bloomz-3b: eol vs eol_alt),PASS,262.0
+readouts differ (bloomz-7b1: eol vs eol_alt),PASS,246.75
+readouts differ (open_llama_3b: eol vs eol_alt),PASS,11.208984375
+readouts differ (open_llama_7b: eol vs eol_alt),PASS,14.75
+readouts differ (open_llama_13b: eol vs eol_alt),PASS,21.125
+readouts differ (llama-7b: eol vs eol_alt),PASS,36.9375
+readouts differ (llama-13b: eol vs eol_alt),PASS,36.6875
+readouts differ (OLMo-1B-hf: eol vs eol_alt),PASS,4.625
+readouts differ (OLMo-7B-hf: eol vs eol_alt),PASS,4.873046875
+readouts differ (gemma-2b: eol vs eol_alt),PASS,108.75
+readouts differ (gemma-7b: eol vs eol_alt),PASS,458.0
+readouts differ (Mistral-7B-v0.1: eol vs eol_alt),PASS,260.5
+readouts differ (Meta-Llama-3-8B: eol vs eol_alt),PASS,36.2578125
+"calibrated CKA in [0, 1] and <= raw, no NaN",PASS,
+threshold = chance level of the highest-rank layer pair (r > 0.99),PASS,0.99998
+null: shuffled pairs give calibrated CKA = 0 (>= 9/10),PASS,10/10
+E2 mean-pooled baseline available for these LLMs,PASS,[]

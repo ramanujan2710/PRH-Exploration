@@ -1,0 +1,82 @@
+19:14:12 device: NVIDIA RTX PRO 6000 Blackwell Server Edition | cpus 48 | seeds [734796314, 576165995, 2197670066] | new language embeddings: ['qwen3-8b-avg', 'qwen3-8b-eol', 'llama3-8b-avg', 'llama3-8b-eol']
+19:14:12 downloading 24 embedding files
+19:14:18 Rosetta embeddings ready
+19:15:21 DenselyCaptionedImages: 7805 items, 7805 captions
+19:15:21 DOCCIDataset: 14847 items, 14847 captions
+19:15:21 coco_val2014: 40504 items, 202654 captions
+19:19:00 embedded qwen3-8b on DenselyCaptionedImages (219s)
+19:23:03 embedded qwen3-8b on DOCCIDataset (243s)
+19:29:15 embedded qwen3-8b on coco_val2014 (372s)
+19:32:39 embedded llama3-8b on DenselyCaptionedImages (204s)
+19:40:24 device: NVIDIA RTX PRO 6000 Blackwell Server Edition | cpus 48 | seeds [734796314, 576165995, 2197670066] | new language embeddings: ['qwen3-8b-avg', 'qwen3-8b-eol', 'llama3-8b-avg', 'llama3-8b-eol']
+19:40:25 downloading 24 embedding files
+19:40:42 Rosetta embeddings ready
+19:41:19 DenselyCaptionedImages: 7805 items, 7805 captions
+19:41:19 DOCCIDataset: 14847 items, 14847 captions
+19:41:19 coco_val2014: 40504 items, 202654 captions
+19:41:24 exists: qwen3-8b DenselyCaptionedImages
+19:41:35 exists: qwen3-8b DOCCIDataset
+19:43:18 exists: qwen3-8b coco_val2014
+19:43:26 exists: llama3-8b DenselyCaptionedImages
+19:48:01 embedded llama3-8b on DOCCIDataset (275s)
+19:54:10 embedded llama3-8b on coco_val2014 (369s)
+19:54:19 224 pending tasks on 12 workers
+19:54:19 waiting: {'align_done': 0, 'align_total': 168, 'geometry_done': 0, 'eta_hours': nan}
+20:04:19 waiting: {'align_done': 0, 'align_total': 168, 'geometry_done': 56, 'eta_hours': nan}
+20:14:19 waiting: {'align_done': 7, 'align_total': 168, 'geometry_done': 56, 'eta_hours': 3.9}
+20:24:19 waiting: {'align_done': 8, 'align_total': 168, 'geometry_done': 56, 'eta_hours': 3.9}
+20:34:19 waiting: {'align_done': 20, 'align_total': 168, 'geometry_done': 56, 'eta_hours': 3.9}
+20:34:33 device: NVIDIA RTX PRO 6000 Blackwell Server Edition | cpus 48 | seeds [734796314, 576165995, 2197670066] | new language embeddings: ['qwen3-8b-avg', 'qwen3-8b-eol', 'llama3-8b-avg', 'llama3-8b-eol']
+20:34:33 downloading 24 embedding files
+20:34:41 Rosetta embeddings ready
+20:35:03 DenselyCaptionedImages: 7805 items, 7805 captions
+20:35:03 DOCCIDataset: 14847 items, 14847 captions
+20:35:03 coco_val2014: 40504 items, 202654 captions
+20:35:07 exists: qwen3-8b DenselyCaptionedImages
+20:35:16 exists: qwen3-8b DOCCIDataset
+20:36:26 exists: qwen3-8b coco_val2014
+20:36:32 exists: llama3-8b DenselyCaptionedImages
+20:36:39 exists: llama3-8b DOCCIDataset
+20:37:32 exists: llama3-8b coco_val2014
+20:37:42 148 pending tasks on 12 workers
+20:37:48 waiting: {'align_done': 20, 'align_total': 168, 'geometry_done': 56, 'eta_hours': 3.9}
+20:47:48 waiting: {'align_done': 20, 'align_total': 168, 'geometry_done': 56, 'eta_hours': 3.9}
+20:57:48 waiting: {'align_done': 28, 'align_total': 168, 'geometry_done': 56, 'eta_hours': 3.4}
+21:07:48 waiting: {'align_done': 28, 'align_total': 168, 'geometry_done': 56, 'eta_hours': 3.4}
+21:17:48 waiting: {'align_done': 39, 'align_total': 168, 'geometry_done': 56, 'eta_hours': 3.5}
+21:27:48 waiting: {'align_done': 42, 'align_total': 168, 'geometry_done': 56, 'eta_hours': 3.5}
+21:37:48 waiting: {'align_done': 52, 'align_total': 168, 'geometry_done': 56, 'eta_hours': 3.1}
+21:47:48 waiting: {'align_done': 56, 'align_total': 168, 'geometry_done': 56, 'eta_hours': 3.0}
+21:57:49 waiting: {'align_done': 68, 'align_total': 168, 'geometry_done': 56, 'eta_hours': 2.6}
+22:07:49 waiting: {'align_done': 74, 'align_total': 168, 'geometry_done': 56, 'eta_hours': 2.4}
+22:17:49 waiting: {'align_done': 78, 'align_total': 168, 'geometry_done': 56, 'eta_hours': 2.3}
+22:27:49 waiting: {'align_done': 84, 'align_total': 168, 'geometry_done': 56, 'eta_hours': 2.1}
+22:37:49 waiting: {'align_done': 93, 'align_total': 168, 'geometry_done': 56, 'eta_hours': 1.9}
+22:47:49 waiting: {'align_done': 101, 'align_total': 168, 'geometry_done': 56, 'eta_hours': 1.7}
+22:57:49 waiting: {'align_done': 108, 'align_total': 168, 'geometry_done': 56, 'eta_hours': 1.5}
+23:07:49 waiting: {'align_done': 117, 'align_total': 168, 'geometry_done': 56, 'eta_hours': 1.3}
+23:17:49 waiting: {'align_done': 124, 'align_total': 168, 'geometry_done': 56, 'eta_hours': 1.1}
+23:27:49 waiting: {'align_done': 130, 'align_total': 168, 'geometry_done': 56, 'eta_hours': 0.9}
+23:37:49 waiting: {'align_done': 137, 'align_total': 168, 'geometry_done': 56, 'eta_hours': 0.8}
+23:47:49 waiting: {'align_done': 141, 'align_total': 168, 'geometry_done': 56, 'eta_hours': 0.7}
+23:57:49 waiting: {'align_done': 149, 'align_total': 168, 'geometry_done': 56, 'eta_hours': 0.5}
+00:07:49 waiting: {'align_done': 157, 'align_total': 168, 'geometry_done': 56, 'eta_hours': 0.3}
+00:17:49 waiting: {'align_done': 164, 'align_total': 168, 'geometry_done': 56, 'eta_hours': 0.1}
+00:27:50 alignment finished: {'align_done': 168, 'align_total': 168, 'geometry_done': 56, 'eta_hours': 0.0}
+00:27:57 checker: 19 PASS / 19
+00:28:34 packaged /content/drive/MyDrive/prh_audit/e7/e7_results.zip
+07:42:03 device: NVIDIA RTX PRO 6000 Blackwell Server Edition | cpus 48 | seeds [734796314, 576165995, 2197670066] | new language embeddings: ['qwen3-8b-avg', 'qwen3-8b-eol', 'llama3-8b-avg', 'llama3-8b-eol']
+07:42:04 downloading 24 embedding files
+07:42:09 Rosetta embeddings ready
+07:42:36 DenselyCaptionedImages: 7805 items, 7805 captions
+07:42:36 DOCCIDataset: 14847 items, 14847 captions
+07:42:36 coco_val2014: 40504 items, 202654 captions
+07:42:44 exists: qwen3-8b DenselyCaptionedImages
+07:42:53 exists: qwen3-8b DOCCIDataset
+07:44:41 exists: qwen3-8b coco_val2014
+07:44:51 exists: llama3-8b DenselyCaptionedImages
+07:44:59 exists: llama3-8b DOCCIDataset
+07:46:11 exists: llama3-8b coco_val2014
+07:46:13 0 pending tasks on 0 workers
+07:46:18 alignment finished: {'align_done': 168, 'align_total': 168, 'geometry_done': 56, 'eta_hours': 0.0}
+07:46:30 checker: 19 PASS / 19

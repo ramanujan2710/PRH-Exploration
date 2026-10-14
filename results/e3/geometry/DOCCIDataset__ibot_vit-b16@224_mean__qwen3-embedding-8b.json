@@ -1,0 +1,1 @@
+{"task": {"kind": "geometry", "dataset": "DOCCIDataset", "vision": "ibot_vit-b16@224_mean", "language": "qwen3-embedding-8b"}, "metrics": {"cka": 0.4070755032695203, "mutual_knn": 0.12435001134872437, "tsi": 0.6044092178344727, "qsi": 0.6007862091064453}, "seconds": 4.211854696273804}

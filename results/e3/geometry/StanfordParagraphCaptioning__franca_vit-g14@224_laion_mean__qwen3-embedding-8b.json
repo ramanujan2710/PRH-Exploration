@@ -1,0 +1,1 @@
+{"task": {"kind": "geometry", "dataset": "StanfordParagraphCaptioning", "vision": "franca_vit-g14@224_laion_mean", "language": "qwen3-embedding-8b"}, "metrics": {"cka": 0.64404925139918, "mutual_knn": 0.13051000237464905, "tsi": 0.652996301651001, "qsi": 0.636881947517395}, "seconds": 5.015993356704712}

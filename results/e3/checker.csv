@@ -1,0 +1,15 @@
+check,result,detail
+worker: no FAILED tasks,PASS,
+all alignment runs present,PASS,420/420
+all geometry runs present,PASS,84/84
+all metric files present,PASS,84/84
+"FOSCTTM within [0, 0.5]",FAIL,"[0.1781, 0.0485, 0.0151, 0.0328, 0.155, 0.3429, 0.4222, 0.0743]"
+"evaluated on all 40,504 COCO val pairs",PASS,{40504}
+informational: FOSCTTM per run (0.5 = chance; weak pairs may sit near it),PASS,"[0.1781, 0.0485, 0.0151, 0.0328, 0.155, 0.3429, 0.4222, 0.0743]"
+Rosetta geometry scores in range,PASS,"[{'cka': 0.595, 'mutual_knn': 0.137, 'tsi': 0.621, 'qsi': 0.597}, {'cka': 0.601, 'mutual_knn': 0.142, 'tsi': 0.611, 'qsi': 0.584}]"
+"calibrated CKA in [0, 1] and <= raw CKA",PASS,
+"calibrated mutual k-NN in [0, 1] and <= raw",PASS,
+"permutation p-values in (0, 1]",PASS,
+their fp32 unbiased CKA vs fp64 on identical inputs (informational),PASS,max |difference| = 3.17e-05
+null: calibrated CKA = 0 on shuffled pairs (>= 18/20),PASS,20/20 zero
+null: p < 0.05 in <= 3/20 shuffles,PASS,0/20

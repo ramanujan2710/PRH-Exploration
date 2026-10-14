@@ -1,0 +1,490 @@
+10:28:20 dataset: 1024 image-caption pairs; example caption: 'Figure 2 of Paper. Pseudorhabdosynochus sulamericanus from Hyporthodus haifensis. (A) composite, ven'
+10:28:45 vision done: vit_tiny_patch16_224.augreg_in21k feats=(1024, 12, 192) (25s)
+10:29:07 vision done: vit_small_patch16_224.augreg_in21k feats=(1024, 12, 384) (22s)
+10:29:41 dataset: 1024 image-caption pairs; example caption: 'Figure 2 of Paper. Pseudorhabdosynochus sulamericanus from Hyporthodus haifensis. (A) composite, ven'
+10:29:42 vision exists, skipping: vit_tiny_patch16_224.augreg_in21k
+10:29:42 vision exists, skipping: vit_small_patch16_224.augreg_in21k
+10:29:42 vision exists, skipping: vit_base_patch16_224.augreg_in21k
+10:30:07 vision done: vit_large_patch16_224.augreg_in21k feats=(1024, 24, 1024) (36s)
+10:30:31 vision done: vit_base_patch16_224.mae feats=(1024, 12, 768) (23s)
+10:31:00 vision done: vit_large_patch16_224.mae feats=(1024, 24, 1024) (29s)
+10:31:20 vision done: vit_large_patch16_224.mae feats=(1024, 24, 1024) (32s)
+10:31:40 vision done: vit_huge_patch14_224.mae feats=(1024, 32, 1280) (40s)
+10:32:07 vision done: vit_small_patch14_dinov2.lvd142m feats=(1024, 12, 384) (27s)
+10:32:40 vision done: vit_base_patch14_dinov2.lvd142m feats=(1024, 12, 768) (32s)
+10:33:08 vision done: vit_base_patch14_dinov2.lvd142m feats=(1024, 12, 768) (34s)
+10:33:58 vision done: vit_large_patch14_dinov2.lvd142m feats=(1024, 24, 1024) (49s)
+10:35:52 vision done: vit_giant_patch14_dinov2.lvd142m feats=(1024, 40, 1536) (115s)
+10:36:16 vision done: vit_base_patch16_clip_224.laion2b feats=(1024, 12, 768) (24s)
+10:36:46 vision done: vit_large_patch14_clip_224.laion2b feats=(1024, 24, 1024) (30s)
+10:37:25 vision done: vit_huge_patch14_clip_224.laion2b feats=(1024, 32, 1280) (39s)
+10:37:58 vision done: vit_huge_patch14_clip_224.laion2b feats=(1024, 32, 1280) (42s)
+10:38:24 vision done: vit_base_patch16_clip_224.laion2b_ft_in12k feats=(1024, 12, 768) (25s)
+10:39:06 vision done: vit_huge_patch14_clip_224.laion2b_ft_in12k feats=(1024, 32, 1280) (42s)
+10:39:27 llm done: bigscience/bloomz-560m feats=(1024, 25, 1024) loss=6.342 bpb=2.074 (21s)
+10:39:51 llm done: bigscience/bloomz-1b1 feats=(1024, 25, 1536) loss=5.763 bpb=1.885 (24s)
+10:40:22 llm done: bigscience/bloomz-1b7 feats=(1024, 25, 2048) loss=5.946 bpb=1.939 (30s)
+10:41:04 llm done: bigscience/bloomz-3b feats=(1024, 31, 2560) loss=5.805 bpb=1.895 (42s)
+10:42:25 llm done: bigscience/bloomz-7b1 feats=(1024, 31, 4096) loss=5.650 bpb=1.839 (81s)
+10:43:14 llm done: openlm-research/open_llama_3b feats=(1024, 27, 3200) loss=4.091 bpb=1.718 (49s)
+10:44:14 llm done: openlm-research/open_llama_7b feats=(1024, 33, 4096) loss=3.994 bpb=1.677 (60s)
+10:46:03 llm done: openlm-research/open_llama_13b feats=(1024, 41, 5120) loss=3.946 bpb=1.655 (109s)
+10:47:03 llm done: huggyllama/llama-7b feats=(1024, 33, 4096) loss=3.677 bpb=1.648 (60s)
+10:48:52 llm done: huggyllama/llama-13b feats=(1024, 41, 5120) loss=3.619 bpb=1.621 (109s)
+10:48:52 SKIPPING huggyllama/llama-30b: needs ~76 GB free disk, have 63 GB
+10:48:52 SKIPPING huggyllama/llama-65b: needs ~142 GB free disk, have 63 GB
+10:49:14 diagnostics saved: /content/drive/MyDrive/prh_audit/full/results/diagnostics.csv 2656 rows
+10:49:14 aligning 10 LLMs x 17 vision models x 3 variants
+10:49:18 [huh] vision stats built (4s)
+10:49:21 [huh] bigscience/bloomz-560m: 17 pairs (3s)
+10:49:24 [huh] bigscience/bloomz-1b1: 17 pairs (3s)
+10:49:28 [huh] bigscience/bloomz-1b7: 17 pairs (3s)
+10:49:31 [huh] bigscience/bloomz-3b: 17 pairs (4s)
+10:49:35 [huh] bigscience/bloomz-7b1: 17 pairs (4s)
+10:49:39 [huh] openlm-research/open_llama_3b: 17 pairs (4s)
+10:49:43 [huh] openlm-research/open_llama_7b: 17 pairs (4s)
+10:49:48 [huh] openlm-research/open_llama_13b: 17 pairs (5s)
+10:49:52 [huh] huggyllama/llama-7b: 17 pairs (4s)
+10:49:58 [huh] huggyllama/llama-13b: 17 pairs (5s)
+10:49:59 [noclip] vision stats built (1s)
+10:50:01 [noclip] bigscience/bloomz-560m: 17 pairs (3s)
+10:50:04 [noclip] bigscience/bloomz-1b1: 17 pairs (3s)
+10:50:07 [noclip] bigscience/bloomz-1b7: 17 pairs (3s)
+10:50:10 [noclip] bigscience/bloomz-3b: 17 pairs (3s)
+10:50:13 [noclip] bigscience/bloomz-7b1: 17 pairs (3s)
+10:50:16 [noclip] openlm-research/open_llama_3b: 17 pairs (3s)
+10:50:19 [noclip] openlm-research/open_llama_7b: 17 pairs (3s)
+10:50:23 [noclip] openlm-research/open_llama_13b: 17 pairs (3s)
+10:50:26 [noclip] huggyllama/llama-7b: 17 pairs (3s)
+10:50:29 [noclip] huggyllama/llama-13b: 17 pairs (3s)
+10:50:30 [std] vision stats built (1s)
+10:50:33 [std] bigscience/bloomz-560m: 17 pairs (3s)
+10:50:36 [std] bigscience/bloomz-1b1: 17 pairs (3s)
+10:50:39 [std] bigscience/bloomz-1b7: 17 pairs (3s)
+10:50:41 [std] bigscience/bloomz-3b: 17 pairs (3s)
+10:50:45 [std] bigscience/bloomz-7b1: 17 pairs (3s)
+10:50:48 [std] openlm-research/open_llama_3b: 17 pairs (3s)
+10:50:51 [std] openlm-research/open_llama_7b: 17 pairs (3s)
+10:50:54 [std] openlm-research/open_llama_13b: 17 pairs (3s)
+10:50:57 [std] huggyllama/llama-7b: 17 pairs (3s)
+10:51:01 [std] huggyllama/llama-13b: 17 pairs (3s)
+10:51:03 packaged: /content/drive/MyDrive/prh_audit/full/prh_audit_results.zip 3.7 MB
+11:13:15 dataset: 1024 image-caption pairs; example caption: 'Figure 2 of Paper. Pseudorhabdosynochus sulamericanus from Hyporthodus haifensis. (A) composite, ven'
+11:13:16 vision exists, skipping: vit_tiny_patch16_224.augreg_in21k
+11:13:16 vision exists, skipping: vit_small_patch16_224.augreg_in21k
+11:13:16 vision exists, skipping: vit_base_patch16_224.augreg_in21k
+11:13:16 vision exists, skipping: vit_large_patch16_224.augreg_in21k
+11:13:16 vision exists, skipping: vit_base_patch16_224.mae
+11:13:16 vision exists, skipping: vit_large_patch16_224.mae
+11:13:16 vision exists, skipping: vit_huge_patch14_224.mae
+11:13:16 vision exists, skipping: vit_small_patch14_dinov2.lvd142m
+11:13:16 vision exists, skipping: vit_base_patch14_dinov2.lvd142m
+11:13:16 vision exists, skipping: vit_large_patch14_dinov2.lvd142m
+11:13:16 vision exists, skipping: vit_giant_patch14_dinov2.lvd142m
+11:13:16 vision exists, skipping: vit_base_patch16_clip_224.laion2b
+11:13:16 vision exists, skipping: vit_large_patch14_clip_224.laion2b
+11:13:16 vision exists, skipping: vit_huge_patch14_clip_224.laion2b
+11:13:16 vision exists, skipping: vit_base_patch16_clip_224.laion2b_ft_in12k
+11:13:16 vision exists, skipping: vit_large_patch14_clip_224.laion2b_ft_in12k
+11:13:16 vision exists, skipping: vit_huge_patch14_clip_224.laion2b_ft_in12k
+11:13:16 llm exists, skipping: bigscience/bloomz-560m
+11:13:16 llm exists, skipping: bigscience/bloomz-1b1
+11:13:16 llm exists, skipping: bigscience/bloomz-1b7
+11:13:16 llm exists, skipping: bigscience/bloomz-3b
+11:13:16 llm exists, skipping: bigscience/bloomz-7b1
+11:13:16 llm exists, skipping: openlm-research/open_llama_3b
+11:13:16 llm exists, skipping: openlm-research/open_llama_7b
+11:13:16 llm exists, skipping: openlm-research/open_llama_13b
+11:13:16 llm exists, skipping: huggyllama/llama-7b
+11:13:16 llm exists, skipping: huggyllama/llama-13b
+11:17:42 llm done: huggyllama/llama-30b feats=(1024, 61, 6656) loss=3.516 bpb=1.575 (266s)
+11:17:42 SKIPPING huggyllama/llama-65b: needs ~142 GB free disk, have 140 GB
+11:19:07 diagnostics saved: /content/drive/MyDrive/prh_audit/full/results/diagnostics.csv 2900 rows
+11:19:07 aligning 11 LLMs x 17 vision models x 3 variants
+11:19:11 [huh] vision stats built (4s)
+11:19:14 [huh] bigscience/bloomz-560m: 17 pairs (3s)
+11:19:17 [huh] bigscience/bloomz-1b1: 17 pairs (3s)
+11:19:21 [huh] bigscience/bloomz-1b7: 17 pairs (3s)
+11:19:24 [huh] bigscience/bloomz-3b: 17 pairs (4s)
+11:19:28 [huh] bigscience/bloomz-7b1: 17 pairs (4s)
+11:19:32 [huh] openlm-research/open_llama_3b: 17 pairs (4s)
+11:19:37 [huh] openlm-research/open_llama_7b: 17 pairs (5s)
+11:19:42 [huh] openlm-research/open_llama_13b: 17 pairs (5s)
+11:19:46 [huh] huggyllama/llama-7b: 17 pairs (4s)
+11:19:51 [huh] huggyllama/llama-13b: 17 pairs (5s)
+11:19:59 [huh] huggyllama/llama-30b: 17 pairs (7s)
+11:20:00 [noclip] vision stats built (1s)
+11:20:03 [noclip] bigscience/bloomz-560m: 17 pairs (3s)
+11:20:05 [noclip] bigscience/bloomz-1b1: 17 pairs (3s)
+11:20:08 [noclip] bigscience/bloomz-1b7: 17 pairs (3s)
+11:20:11 [noclip] bigscience/bloomz-3b: 17 pairs (3s)
+11:20:14 [noclip] bigscience/bloomz-7b1: 17 pairs (3s)
+11:20:17 [noclip] openlm-research/open_llama_3b: 17 pairs (3s)
+11:20:20 [noclip] openlm-research/open_llama_7b: 17 pairs (3s)
+11:20:24 [noclip] openlm-research/open_llama_13b: 17 pairs (3s)
+11:20:27 [noclip] huggyllama/llama-7b: 17 pairs (3s)
+11:20:31 [noclip] huggyllama/llama-13b: 17 pairs (3s)
+11:20:35 [noclip] huggyllama/llama-30b: 17 pairs (4s)
+11:20:36 [std] vision stats built (1s)
+11:20:39 [std] bigscience/bloomz-560m: 17 pairs (3s)
+11:20:42 [std] bigscience/bloomz-1b1: 17 pairs (3s)
+11:20:44 [std] bigscience/bloomz-1b7: 17 pairs (3s)
+11:20:47 [std] bigscience/bloomz-3b: 17 pairs (3s)
+11:20:50 [std] bigscience/bloomz-7b1: 17 pairs (3s)
+11:20:53 [std] openlm-research/open_llama_3b: 17 pairs (3s)
+11:20:57 [std] openlm-research/open_llama_7b: 17 pairs (3s)
+11:21:00 [std] openlm-research/open_llama_13b: 17 pairs (3s)
+11:21:03 [std] huggyllama/llama-7b: 17 pairs (3s)
+11:21:07 [std] huggyllama/llama-13b: 17 pairs (3s)
+11:21:11 [std] huggyllama/llama-30b: 17 pairs (4s)
+11:21:16 packaged: /content/drive/MyDrive/prh_audit/full/prh_audit_results.zip 4.5 MB
+11:29:25 dataset: 1024 image-caption pairs; example caption: 'Figure 2 of Paper. Pseudorhabdosynochus sulamericanus from Hyporthodus haifensis. (A) composite, ven'
+11:29:25 vision exists, skipping: vit_tiny_patch16_224.augreg_in21k
+11:29:25 vision exists, skipping: vit_small_patch16_224.augreg_in21k
+11:29:25 vision exists, skipping: vit_base_patch16_224.augreg_in21k
+11:29:25 vision exists, skipping: vit_large_patch16_224.augreg_in21k
+11:29:25 vision exists, skipping: vit_base_patch16_224.mae
+11:29:25 vision exists, skipping: vit_large_patch16_224.mae
+11:29:25 vision exists, skipping: vit_huge_patch14_224.mae
+11:29:25 vision exists, skipping: vit_small_patch14_dinov2.lvd142m
+11:29:25 vision exists, skipping: vit_base_patch14_dinov2.lvd142m
+11:29:25 vision exists, skipping: vit_large_patch14_dinov2.lvd142m
+11:29:25 vision exists, skipping: vit_giant_patch14_dinov2.lvd142m
+11:29:25 vision exists, skipping: vit_base_patch16_clip_224.laion2b
+11:29:25 vision exists, skipping: vit_large_patch14_clip_224.laion2b
+11:29:25 vision exists, skipping: vit_huge_patch14_clip_224.laion2b
+11:29:25 vision exists, skipping: vit_base_patch16_clip_224.laion2b_ft_in12k
+11:29:25 vision exists, skipping: vit_large_patch14_clip_224.laion2b_ft_in12k
+11:29:25 vision exists, skipping: vit_huge_patch14_clip_224.laion2b_ft_in12k
+11:29:25 llm exists, skipping: bigscience/bloomz-560m
+11:29:25 llm exists, skipping: bigscience/bloomz-1b1
+11:29:25 llm exists, skipping: bigscience/bloomz-1b7
+11:29:25 llm exists, skipping: bigscience/bloomz-3b
+11:29:25 llm exists, skipping: bigscience/bloomz-7b1
+11:29:25 llm exists, skipping: openlm-research/open_llama_3b
+11:29:25 llm exists, skipping: openlm-research/open_llama_7b
+11:29:25 llm exists, skipping: openlm-research/open_llama_13b
+11:29:25 llm exists, skipping: huggyllama/llama-7b
+11:29:25 llm exists, skipping: huggyllama/llama-13b
+11:29:25 llm exists, skipping: huggyllama/llama-30b
+11:29:25 SKIPPING huggyllama/llama-65b: needs ~145 GB free disk, have 137 GB
+11:29:42 diagnostics saved: /content/drive/MyDrive/prh_audit/full/results/diagnostics.csv 2900 rows
+11:29:42 aligning 11 LLMs x 17 vision models x 3 variants
+11:29:42 variant done: huh
+11:29:42 variant done: noclip
+11:29:42 variant done: std
+11:29:45 packaged: /content/drive/MyDrive/prh_audit/full/prh_audit_results.zip 4.5 MB
+11:32:59 dataset: 1024 image-caption pairs; example caption: 'Figure 2 of Paper. Pseudorhabdosynochus sulamericanus from Hyporthodus haifensis. (A) composite, ven'
+11:32:59 vision exists, skipping: vit_tiny_patch16_224.augreg_in21k
+11:32:59 vision exists, skipping: vit_small_patch16_224.augreg_in21k
+11:32:59 vision exists, skipping: vit_base_patch16_224.augreg_in21k
+11:32:59 vision exists, skipping: vit_large_patch16_224.augreg_in21k
+11:32:59 vision exists, skipping: vit_base_patch16_224.mae
+11:32:59 vision exists, skipping: vit_large_patch16_224.mae
+11:32:59 vision exists, skipping: vit_huge_patch14_224.mae
+11:32:59 vision exists, skipping: vit_small_patch14_dinov2.lvd142m
+11:32:59 vision exists, skipping: vit_base_patch14_dinov2.lvd142m
+11:32:59 vision exists, skipping: vit_large_patch14_dinov2.lvd142m
+11:32:59 vision exists, skipping: vit_giant_patch14_dinov2.lvd142m
+11:32:59 vision exists, skipping: vit_base_patch16_clip_224.laion2b
+11:32:59 vision exists, skipping: vit_large_patch14_clip_224.laion2b
+11:32:59 vision exists, skipping: vit_huge_patch14_clip_224.laion2b
+11:32:59 vision exists, skipping: vit_base_patch16_clip_224.laion2b_ft_in12k
+11:32:59 vision exists, skipping: vit_large_patch14_clip_224.laion2b_ft_in12k
+11:32:59 vision exists, skipping: vit_huge_patch14_clip_224.laion2b_ft_in12k
+11:32:59 llm exists, skipping: bigscience/bloomz-560m
+11:32:59 llm exists, skipping: bigscience/bloomz-1b1
+11:32:59 llm exists, skipping: bigscience/bloomz-1b7
+11:32:59 llm exists, skipping: bigscience/bloomz-3b
+11:32:59 llm exists, skipping: bigscience/bloomz-7b1
+11:32:59 llm exists, skipping: openlm-research/open_llama_3b
+11:32:59 llm exists, skipping: openlm-research/open_llama_7b
+11:32:59 llm exists, skipping: openlm-research/open_llama_13b
+11:32:59 llm exists, skipping: huggyllama/llama-7b
+11:32:59 llm exists, skipping: huggyllama/llama-13b
+11:32:59 llm exists, skipping: huggyllama/llama-30b
+11:48:24 llm done: huggyllama/llama-65b feats=(1024, 81, 8192) loss=3.706 bpb=1.661 (925s)
+11:50:20 diagnostics saved: /content/drive/MyDrive/prh_audit/full/results/diagnostics.csv 3224 rows
+11:50:20 aligning 12 LLMs x 17 vision models x 3 variants
+11:50:24 [huh] vision stats built (4s)
+11:50:49 [huh] huggyllama/llama-65b: 17 pairs (24s)
+11:50:50 [noclip] vision stats built (1s)
+11:50:56 [noclip] huggyllama/llama-65b: 17 pairs (6s)
+11:50:57 [std] vision stats built (1s)
+11:51:03 [std] huggyllama/llama-65b: 17 pairs (6s)
+11:52:53 packaged: /content/drive/MyDrive/prh_audit/full/prh_audit_results.zip 5.4 MB
+14:01:30 dataset: 1024 image-caption pairs; example caption: 'Figure 2 of Paper. Pseudorhabdosynochus sulamericanus from Hyporthodus haifensis. (A) composite, ven'
+14:01:31 vision exists, skipping: vit_tiny_patch16_224.augreg_in21k
+14:01:31 vision exists, skipping: vit_small_patch16_224.augreg_in21k
+14:01:31 vision exists, skipping: vit_base_patch16_224.augreg_in21k
+14:01:31 vision exists, skipping: vit_large_patch16_224.augreg_in21k
+14:01:31 vision exists, skipping: vit_base_patch16_224.mae
+14:01:31 vision exists, skipping: vit_large_patch16_224.mae
+14:01:31 vision exists, skipping: vit_huge_patch14_224.mae
+14:01:31 vision exists, skipping: vit_small_patch14_dinov2.lvd142m
+14:01:31 vision exists, skipping: vit_base_patch14_dinov2.lvd142m
+14:01:31 vision exists, skipping: vit_large_patch14_dinov2.lvd142m
+14:01:31 vision exists, skipping: vit_giant_patch14_dinov2.lvd142m
+14:01:31 vision exists, skipping: vit_base_patch16_clip_224.laion2b
+14:01:31 vision exists, skipping: vit_large_patch14_clip_224.laion2b
+14:01:31 vision exists, skipping: vit_huge_patch14_clip_224.laion2b
+14:01:31 vision exists, skipping: vit_base_patch16_clip_224.laion2b_ft_in12k
+14:01:31 vision exists, skipping: vit_large_patch14_clip_224.laion2b_ft_in12k
+14:01:31 vision exists, skipping: vit_huge_patch14_clip_224.laion2b_ft_in12k
+14:01:33 archived 4-bit huggyllama/llama-65b to /content/drive/MyDrive/prh_audit/full/archive_nf4; will re-extract in bf16
+14:01:33 pre-flight: allenai/OLMo-1B-hf {'weights_gb': 4.7, 'format': 'safetensors', 'gpu_gb': 102.0, 'cpu_free_gb': 165.0, 'disk_free_gb': 206.1, 'mode': 'gpu'}
+14:02:00 llm done: allenai/OLMo-1B-hf feats=(1024, 17, 2048) bpb=1.639 placement=gpu batch=32 seq=224 (26s)
+14:02:00 pre-flight: google/gemma-2b {'weights_gb': 5.0, 'format': 'safetensors', 'gpu_gb': 102.0, 'cpu_free_gb': 163.7, 'disk_free_gb': 201.3, 'mode': 'gpu'}
+14:02:41 llm done: google/gemma-2b feats=(1024, 19, 2048) bpb=1.819 placement=gpu batch=18 seq=211 (41s)
+14:02:41 pre-flight: mistralai/Mistral-7B-v0.1 {'weights_gb': 14.5, 'format': 'safetensors', 'gpu_gb': 102.0, 'cpu_free_gb': 163.7, 'disk_free_gb': 196.2, 'mode': 'gpu'}
+14:03:42 llm done: mistralai/Mistral-7B-v0.1 feats=(1024, 33, 4096) bpb=1.702 placement=gpu batch=32 seq=233 (61s)
+14:03:42 pre-flight: NousResearch/Meta-Llama-3-8B {'weights_gb': 16.1, 'format': 'safetensors', 'gpu_gb': 102.0, 'cpu_free_gb': 162.8, 'disk_free_gb': 181.5, 'mode': 'gpu'}
+14:04:52 llm done: NousResearch/Meta-Llama-3-8B feats=(1024, 33, 4096) bpb=1.636 placement=gpu batch=32 seq=227 (70s)
+14:04:52 pre-flight: google/gemma-7b {'weights_gb': 17.1, 'format': 'safetensors', 'gpu_gb': 102.0, 'cpu_free_gb': 161.6, 'disk_free_gb': 165.1, 'mode': 'gpu'}
+14:06:20 llm done: google/gemma-7b feats=(1024, 29, 3072) bpb=1.762 placement=gpu batch=18 seq=211 (88s)
+14:06:20 pre-flight: allenai/OLMo-7B-hf {'weights_gb': 27.6, 'format': 'safetensors', 'gpu_gb': 102.0, 'cpu_free_gb': 161.4, 'disk_free_gb': 147.9, 'mode': 'gpu'}
+14:08:00 llm done: allenai/OLMo-7B-hf feats=(1024, 33, 4096) bpb=1.522 placement=gpu batch=32 seq=224 (99s)
+14:08:00 pre-flight: mistralai/Mixtral-8x7B-v0.1 {'weights_gb': 93.4, 'format': 'safetensors', 'gpu_gb': 102.0, 'cpu_free_gb': 160.2, 'disk_free_gb': 120.0, 'mode': 'gpu+cpu'}
+14:16:01 LLM FAILED: mistralai/Mixtral-8x7B-v0.1 OutOfMemoryError('CUDA out of memory. Tried to allocate 908.00 MiB. GPU 0 has a total capacity of 94.97 GiB of which 793.88 MiB is free. Including non-PyTorch memory, this process has 94.19 GiB memory in use. Of the allocated memory 92.06 GiB is allocated by PyTorch, and 1.49 GiB is reserved by PyTo
+14:16:01 pre-flight: huggyllama/llama-65b {'weights_gb': 130.6, 'format': 'safetensors', 'gpu_gb': 102.0, 'cpu_free_gb': 160.0, 'disk_free_gb': 26.6, 'mode': 'skip', 'reason': 'download needs 139 GB disk, 27 GB free'}
+14:16:01 SKIPPING huggyllama/llama-65b: download needs 139 GB disk, 27 GB free
+14:16:01 pre-flight: NousResearch/Meta-Llama-3-70B {'weights_gb': 141.1, 'format': 'safetensors', 'gpu_gb': 102.0, 'cpu_free_gb': 160.0, 'disk_free_gb': 26.6, 'mode': 'skip', 'reason': 'download needs 149 GB disk, 27 GB free'}
+14:16:01 SKIPPING NousResearch/Meta-Llama-3-70B: download needs 149 GB disk, 27 GB free
+14:18:08 diagnostics saved: /content/drive/MyDrive/prh_audit/full/results/diagnostics.csv 3556 rows
+14:18:08 aligning 17 LLMs x 17 vision models x 3 variants
+14:18:12 [huh] vision stats built (4s)
+14:18:15 [huh] allenai/OLMo-1B-hf: 17 pairs (3s)
+14:18:19 [huh] allenai/OLMo-7B-hf: 17 pairs (4s)
+14:18:22 [huh] google/gemma-2b: 17 pairs (3s)
+14:18:26 [huh] google/gemma-7b: 17 pairs (4s)
+14:18:30 [huh] mistralai/Mistral-7B-v0.1: 17 pairs (4s)
+14:18:35 [huh] NousResearch/Meta-Llama-3-8B: 17 pairs (4s)
+14:18:36 [noclip] vision stats built (1s)
+14:18:38 [noclip] allenai/OLMo-1B-hf: 17 pairs (3s)
+14:18:41 [noclip] allenai/OLMo-7B-hf: 17 pairs (3s)
+14:18:44 [noclip] google/gemma-2b: 17 pairs (3s)
+14:18:47 [noclip] google/gemma-7b: 17 pairs (3s)
+14:18:50 [noclip] mistralai/Mistral-7B-v0.1: 17 pairs (3s)
+14:18:54 [noclip] NousResearch/Meta-Llama-3-8B: 17 pairs (3s)
+14:18:55 [std] vision stats built (1s)
+14:18:57 [std] allenai/OLMo-1B-hf: 17 pairs (3s)
+14:19:00 [std] allenai/OLMo-7B-hf: 17 pairs (3s)
+14:19:03 [std] google/gemma-2b: 17 pairs (3s)
+14:19:06 [std] google/gemma-7b: 17 pairs (3s)
+14:19:09 [std] mistralai/Mistral-7B-v0.1: 17 pairs (3s)
+14:19:12 [std] NousResearch/Meta-Llama-3-8B: 17 pairs (3s)
+14:23:55 packaged: /content/drive/MyDrive/prh_audit/full/prh_audit_results.zip 6.5 MB
+14:33:54 dataset: 1024 image-caption pairs; example caption: 'Figure 2 of Paper. Pseudorhabdosynochus sulamericanus from Hyporthodus haifensis. (A) composite, ven'
+14:33:54 vision exists, skipping: vit_tiny_patch16_224.augreg_in21k
+14:33:54 vision exists, skipping: vit_small_patch16_224.augreg_in21k
+14:33:54 vision exists, skipping: vit_base_patch16_224.augreg_in21k
+14:33:54 vision exists, skipping: vit_large_patch16_224.augreg_in21k
+14:33:54 vision exists, skipping: vit_base_patch16_224.mae
+14:33:54 vision exists, skipping: vit_large_patch16_224.mae
+14:33:54 vision exists, skipping: vit_huge_patch14_224.mae
+14:33:54 vision exists, skipping: vit_small_patch14_dinov2.lvd142m
+14:33:54 vision exists, skipping: vit_base_patch14_dinov2.lvd142m
+14:33:54 vision exists, skipping: vit_large_patch14_dinov2.lvd142m
+14:33:54 vision exists, skipping: vit_giant_patch14_dinov2.lvd142m
+14:33:54 vision exists, skipping: vit_base_patch16_clip_224.laion2b
+14:33:54 vision exists, skipping: vit_large_patch14_clip_224.laion2b
+14:33:54 vision exists, skipping: vit_huge_patch14_clip_224.laion2b
+14:33:54 vision exists, skipping: vit_base_patch16_clip_224.laion2b_ft_in12k
+14:33:54 vision exists, skipping: vit_large_patch14_clip_224.laion2b_ft_in12k
+14:33:54 vision exists, skipping: vit_huge_patch14_clip_224.laion2b_ft_in12k
+14:33:55 pre-flight: mistralai/Mixtral-8x7B-v0.1 {'weights_gb': 93.4, 'format': 'safetensors', 'gpu_gb': 102.0, 'cpu_free_gb': 165.1, 'disk_free_gb': 206.2, 'mode': 'gpu+cpu'}
+14:41:13 LLM FAILED: mistralai/Mixtral-8x7B-v0.1 OutOfMemoryError('CUDA out of memory. Tried to allocate 908.00 MiB. GPU 0 has a total capacity of 94.97 GiB of which 393.88 MiB is free. Including non-PyTorch memory, this process has 94.58 GiB memory in use. Of the allocated memory 92.06 GiB is allocated by PyTorch, and 1.88 GiB is reserved by PyTo
+14:41:13 pre-flight: huggyllama/llama-65b {'weights_gb': 130.6, 'format': 'safetensors', 'gpu_gb': 102.0, 'cpu_free_gb': 163.0, 'disk_free_gb': 112.8, 'mode': 'skip', 'reason': 'download needs 139 GB disk, 113 GB free'}
+14:41:13 SKIPPING huggyllama/llama-65b: download needs 139 GB disk, 113 GB free
+14:41:13 pre-flight: NousResearch/Meta-Llama-3-70B {'weights_gb': 141.1, 'format': 'safetensors', 'gpu_gb': 102.0, 'cpu_free_gb': 163.0, 'disk_free_gb': 112.8, 'mode': 'skip', 'reason': 'download needs 149 GB disk, 113 GB free'}
+14:41:13 SKIPPING NousResearch/Meta-Llama-3-70B: download needs 149 GB disk, 113 GB free
+14:43:39 diagnostics saved: /content/drive/MyDrive/prh_audit/full/results/diagnostics.csv 3556 rows
+14:43:39 aligning 17 LLMs x 17 vision models x 3 variants
+14:43:39 variant done: huh
+14:43:39 variant done: noclip
+14:43:39 variant done: std
+14:48:35 packaged: /content/drive/MyDrive/prh_audit/full/prh_audit_results.zip 6.5 MB
+15:15:31 dataset: 1024 image-caption pairs; example caption: 'Figure 2 of Paper. Pseudorhabdosynochus sulamericanus from Hyporthodus haifensis. (A) composite, ven'
+15:15:31 vision exists, skipping: vit_tiny_patch16_224.augreg_in21k
+15:15:31 vision exists, skipping: vit_small_patch16_224.augreg_in21k
+15:15:31 vision exists, skipping: vit_base_patch16_224.augreg_in21k
+15:15:31 vision exists, skipping: vit_large_patch16_224.augreg_in21k
+15:15:31 vision exists, skipping: vit_base_patch16_224.mae
+15:15:31 vision exists, skipping: vit_large_patch16_224.mae
+15:15:31 vision exists, skipping: vit_huge_patch14_224.mae
+15:15:31 vision exists, skipping: vit_small_patch14_dinov2.lvd142m
+15:15:31 vision exists, skipping: vit_base_patch14_dinov2.lvd142m
+15:15:31 vision exists, skipping: vit_large_patch14_dinov2.lvd142m
+15:15:31 vision exists, skipping: vit_giant_patch14_dinov2.lvd142m
+15:15:31 vision exists, skipping: vit_base_patch16_clip_224.laion2b
+15:15:31 vision exists, skipping: vit_large_patch14_clip_224.laion2b
+15:15:31 vision exists, skipping: vit_huge_patch14_clip_224.laion2b
+15:15:31 vision exists, skipping: vit_base_patch16_clip_224.laion2b_ft_in12k
+15:15:32 vision exists, skipping: vit_large_patch14_clip_224.laion2b_ft_in12k
+15:15:32 vision exists, skipping: vit_huge_patch14_clip_224.laion2b_ft_in12k
+15:15:32 pre-flight: mistralai/Mixtral-8x7B-v0.1 {'weights_gb': 93.4, 'weights_gib': 87.0, 'format': 'safetensors', 'gpu_gib': 95.0, 'cpu_free_gib': 153.7, 'disk_free_gb': 206.2, 'mode': 'gpu+cpu'} max_memory: {0: '80GiB', 'cpu': '137GiB'}
+15:24:35 llm done: mistralai/Mixtral-8x7B-v0.1 feats=(1024, 33, 4096) bpb=1.641 placement=gpu+cpu batch=32 seq=233 (543s) | free disk 206 -> 112 GB
+15:24:35 WARNING: disk not recovered after mistralai/Mixtral-8x7B-v0.1 (206 -> 112 GB free). Largest folders:
+15:24:36 97G	/root
+89G	/root/.cache/huggingface
+89G	/root/.cache
+88G	/root/.cache/huggingface/hub
+7.8G	/root/.julia
+6.5G	/root/.julia/artifacts
+3.1G	/root/.julia/artifacts/968b81492683c02b5bc8020678d2832fa3a647d8
+984M	/root/.julia/compiled/v1.12
+984M	/root/.julia/compiled
+839M	/root/.julia/artifacts/a70eacdfcf75309ddd8bde79920e3e021a05665b
+559M	/root/.julia/artifacts/508b6a269830e5016be71990c8ec4386ecd8a3d1
+522M	/root/.cache/huggingface/datasets
+
+15:24:36 pre-flight: huggyllama/llama-65b {'weights_gb': 130.6, 'weights_gib': 121.6, 'format': 'safetensors', 'gpu_gib': 95.0, 'cpu_free_gib': 153.3, 'disk_free_gb': 112.5, 'mode': 'skip', 'reason': 'download needs 139 GB disk, 112 GB free'} max_memory: None
+15:24:36 SKIPPING huggyllama/llama-65b: download needs 139 GB disk, 112 GB free
+15:24:36 pre-flight: NousResearch/Meta-Llama-3-70B {'weights_gb': 141.1, 'weights_gib': 131.4, 'format': 'safetensors', 'gpu_gib': 95.0, 'cpu_free_gib': 153.3, 'disk_free_gb': 112.5, 'mode': 'skip', 'reason': 'download needs 149 GB disk, 112 GB free'} max_memory: None
+15:24:36 SKIPPING NousResearch/Meta-Llama-3-70B: download needs 149 GB disk, 112 GB free
+15:27:17 diagnostics saved: /content/drive/MyDrive/prh_audit/full/results/diagnostics.csv 3688 rows
+15:27:18 aligning 18 LLMs x 17 vision models x 3 variants
+15:27:22 [huh] vision stats built (4s)
+15:27:26 [huh] mistralai/Mixtral-8x7B-v0.1: 17 pairs (5s)
+15:27:27 [noclip] vision stats built (1s)
+15:27:31 [noclip] mistralai/Mixtral-8x7B-v0.1: 17 pairs (3s)
+15:27:32 [std] vision stats built (1s)
+15:27:35 [std] mistralai/Mixtral-8x7B-v0.1: 17 pairs (3s)
+15:35:44 dataset: 1024 image-caption pairs; example caption: 'Figure 2 of Paper. Pseudorhabdosynochus sulamericanus from Hyporthodus haifensis. (A) composite, ven'
+15:35:45 vision exists, skipping: vit_tiny_patch16_224.augreg_in21k
+15:35:45 vision exists, skipping: vit_small_patch16_224.augreg_in21k
+15:35:45 vision exists, skipping: vit_base_patch16_224.augreg_in21k
+15:35:45 vision exists, skipping: vit_large_patch16_224.augreg_in21k
+15:35:45 vision exists, skipping: vit_base_patch16_224.mae
+15:35:45 vision exists, skipping: vit_large_patch16_224.mae
+15:35:45 vision exists, skipping: vit_huge_patch14_224.mae
+15:35:45 vision exists, skipping: vit_small_patch14_dinov2.lvd142m
+15:35:45 vision exists, skipping: vit_base_patch14_dinov2.lvd142m
+15:35:45 vision exists, skipping: vit_large_patch14_dinov2.lvd142m
+15:35:45 vision exists, skipping: vit_giant_patch14_dinov2.lvd142m
+15:35:45 vision exists, skipping: vit_base_patch16_clip_224.laion2b
+15:35:45 vision exists, skipping: vit_large_patch14_clip_224.laion2b
+15:35:45 vision exists, skipping: vit_huge_patch14_clip_224.laion2b
+15:35:45 vision exists, skipping: vit_base_patch16_clip_224.laion2b_ft_in12k
+15:35:45 vision exists, skipping: vit_large_patch14_clip_224.laion2b_ft_in12k
+15:35:45 vision exists, skipping: vit_huge_patch14_clip_224.laion2b_ft_in12k
+15:35:45 cleared old downloads: free disk 206 -> 206 GB
+15:35:45 pre-flight: huggyllama/llama-65b {'weights_gb': 130.6, 'weights_gib': 121.6, 'format': 'safetensors', 'gpu_gib': 95.0, 'cpu_free_gib': 137.0, 'disk_free_gb': 206.0, 'mode': 'gpu+cpu'} max_memory: {0: '80GiB', 'cpu': '121GiB'}
+15:48:48 LLM FAILED: huggyllama/llama-65b (exit code 1); last lines of /content/drive/MyDrive/prh_audit/full/llm_worker_huggyllama_llama-65b.txt:
+        hidden_states = self.mlp(hidden_states)
+      File "/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py", line 1779, in _wrapped_call_impl
+        return self._call_impl(*args, **kwargs)
+               ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+      File "/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py", line 1790, in _call_impl
+        return forward_call(*args, **kwargs)
+      File "/usr/local/lib/python3.13/dist-packages/accelerate/hooks.py", line 192, in new_forward
+        output = module._old_forward(*args, **kwargs)
+      File "/usr/local/lib/python3.13/dist-packages/transformers/models/llama/modeling_llama.py", line 175, in forward
+        down_proj = self.down_proj(self.act_fn(self.gate_proj(x)) * self.up_proj(x))
+                                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~
+    torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 318.00 MiB. GPU 0 has a total capacity of 94.97 GiB of which 30.56 MiB is free. Process 2890 has 722.00 MiB memory in use. Including non-PyTorch memory, this process has 94.22 GiB memory in use. Of the allocated memory 89.66 GiB is allocated by PyTorch, and 3.93 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://docs.pytorch.org/docs/stable/notes/cuda.html#optimizing-memory-usage-with-pytorch-cuda-alloc-conf)
+15:48:48 pre-flight: NousResearch/Meta-Llama-3-70B {'weights_gb': 141.1, 'weights_gib': 131.4, 'format': 'safetensors', 'gpu_gib': 95.0, 'cpu_free_gib': 135.3, 'disk_free_gb': 205.9, 'mode': 'gpu+cpu'} max_memory: {0: '80GiB', 'cpu': '119GiB'}
+15:58:05 dataset: 1024 image-caption pairs; example caption: 'Figure 2 of Paper. Pseudorhabdosynochus sulamericanus from Hyporthodus haifensis. (A) composite, ven'
+15:58:06 vision exists, skipping: vit_tiny_patch16_224.augreg_in21k
+15:58:06 vision exists, skipping: vit_small_patch16_224.augreg_in21k
+15:58:06 vision exists, skipping: vit_base_patch16_224.augreg_in21k
+15:58:06 vision exists, skipping: vit_large_patch16_224.augreg_in21k
+15:58:06 vision exists, skipping: vit_base_patch16_224.mae
+15:58:06 vision exists, skipping: vit_large_patch16_224.mae
+15:58:06 vision exists, skipping: vit_huge_patch14_224.mae
+15:58:06 vision exists, skipping: vit_small_patch14_dinov2.lvd142m
+15:58:06 vision exists, skipping: vit_base_patch14_dinov2.lvd142m
+15:58:06 vision exists, skipping: vit_large_patch14_dinov2.lvd142m
+15:58:06 vision exists, skipping: vit_giant_patch14_dinov2.lvd142m
+15:58:06 vision exists, skipping: vit_base_patch16_clip_224.laion2b
+15:58:06 vision exists, skipping: vit_large_patch14_clip_224.laion2b
+15:58:06 vision exists, skipping: vit_huge_patch14_clip_224.laion2b
+15:58:06 vision exists, skipping: vit_base_patch16_clip_224.laion2b_ft_in12k
+15:58:06 vision exists, skipping: vit_large_patch14_clip_224.laion2b_ft_in12k
+15:58:06 vision exists, skipping: vit_huge_patch14_clip_224.laion2b_ft_in12k
+15:59:04 dataset: 1024 image-caption pairs; example caption: 'Figure 2 of Paper. Pseudorhabdosynochus sulamericanus from Hyporthodus haifensis. (A) composite, ven'
+15:59:04 vision exists, skipping: vit_tiny_patch16_224.augreg_in21k
+15:59:04 vision exists, skipping: vit_small_patch16_224.augreg_in21k
+15:59:04 vision exists, skipping: vit_base_patch16_224.augreg_in21k
+15:59:04 vision exists, skipping: vit_large_patch16_224.augreg_in21k
+15:59:04 vision exists, skipping: vit_base_patch16_224.mae
+15:59:04 vision exists, skipping: vit_large_patch16_224.mae
+15:59:04 vision exists, skipping: vit_huge_patch14_224.mae
+15:59:04 vision exists, skipping: vit_small_patch14_dinov2.lvd142m
+15:59:04 vision exists, skipping: vit_base_patch14_dinov2.lvd142m
+15:59:04 vision exists, skipping: vit_large_patch14_dinov2.lvd142m
+15:59:04 vision exists, skipping: vit_giant_patch14_dinov2.lvd142m
+15:59:04 vision exists, skipping: vit_base_patch16_clip_224.laion2b
+15:59:04 vision exists, skipping: vit_large_patch14_clip_224.laion2b
+15:59:04 vision exists, skipping: vit_huge_patch14_clip_224.laion2b
+15:59:04 vision exists, skipping: vit_base_patch16_clip_224.laion2b_ft_in12k
+15:59:04 vision exists, skipping: vit_large_patch14_clip_224.laion2b_ft_in12k
+15:59:04 vision exists, skipping: vit_huge_patch14_clip_224.laion2b_ft_in12k
+15:59:04 RUN_ONLY: ['huggyllama/llama-65b'] | still to extract: ['huggyllama/llama-65b']
+15:59:04 cleared old downloads: free disk 206 -> 206 GB
+15:59:04 pre-flight: huggyllama/llama-65b {'weights_gb': 130.6, 'weights_gib': 121.6, 'format': 'safetensors', 'gpu_gib': 95.0, 'cpu_free_gib': 136.7, 'disk_free_gb': 206.2, 'mode': 'gpu+cpu'} max_memory: {0: '80GiB', 'cpu': '120GiB'}
+16:18:09 llm done: huggyllama/llama-65b feats=(1024, 81, 8192) bpb=1.557 placement=gpu+cpu batch=15 seq=236 (1145s) | free disk 206 -> 205 GB
+16:20:31 diagnostics saved: /content/drive/MyDrive/prh_audit/full/results/diagnostics.csv 4012 rows
+16:20:31 aligning 19 LLMs x 17 vision models x 3 variants
+16:20:35 [huh] vision stats built (4s)
+16:20:46 [huh] huggyllama/llama-65b: 17 pairs (11s)
+16:20:47 [noclip] vision stats built (1s)
+16:20:54 [noclip] huggyllama/llama-65b: 17 pairs (6s)
+16:20:55 [std] vision stats built (1s)
+16:21:01 [std] huggyllama/llama-65b: 17 pairs (6s)
+16:26:10 packaged: /content/drive/MyDrive/prh_audit/full/prh_audit_results.zip 7.8 MB
+16:34:06 dataset: 1024 image-caption pairs; example caption: 'Figure 2 of Paper. Pseudorhabdosynochus sulamericanus from Hyporthodus haifensis. (A) composite, ven'
+16:34:06 vision exists, skipping: vit_tiny_patch16_224.augreg_in21k
+16:34:06 vision exists, skipping: vit_small_patch16_224.augreg_in21k
+16:34:06 vision exists, skipping: vit_base_patch16_224.augreg_in21k
+16:34:06 vision exists, skipping: vit_large_patch16_224.augreg_in21k
+16:34:06 vision exists, skipping: vit_base_patch16_224.mae
+16:34:06 vision exists, skipping: vit_large_patch16_224.mae
+16:34:06 vision exists, skipping: vit_huge_patch14_224.mae
+16:34:06 vision exists, skipping: vit_small_patch14_dinov2.lvd142m
+16:34:06 vision exists, skipping: vit_base_patch14_dinov2.lvd142m
+16:34:06 vision exists, skipping: vit_large_patch14_dinov2.lvd142m
+16:34:06 vision exists, skipping: vit_giant_patch14_dinov2.lvd142m
+16:34:06 vision exists, skipping: vit_base_patch16_clip_224.laion2b
+16:34:06 vision exists, skipping: vit_large_patch14_clip_224.laion2b
+16:34:06 vision exists, skipping: vit_huge_patch14_clip_224.laion2b
+16:34:06 vision exists, skipping: vit_base_patch16_clip_224.laion2b_ft_in12k
+16:34:06 vision exists, skipping: vit_large_patch14_clip_224.laion2b_ft_in12k
+16:34:06 vision exists, skipping: vit_huge_patch14_clip_224.laion2b_ft_in12k
+16:34:08 RUN_EXCEPT: ['huggyllama/llama-65b', 'NousResearch/Meta-Llama-3-70B'] | still to extract: nothing (features already on Drive)
+16:36:55 diagnostics saved: /content/drive/MyDrive/prh_audit/full/results/diagnostics.csv 4012 rows
+16:36:55 aligning 19 LLMs x 17 vision models x 3 variants
+16:36:55 variant done: huh
+16:36:55 variant done: noclip
+16:36:55 variant done: std
+16:42:29 packaged: /content/drive/MyDrive/prh_audit/full/prh_audit_results.zip 7.8 MB
+16:51:59 dataset: 1024 image-caption pairs; example caption: 'Figure 2 of Paper. Pseudorhabdosynochus sulamericanus from Hyporthodus haifensis. (A) composite, ven'
+16:51:59 vision exists, skipping: vit_tiny_patch16_224.augreg_in21k
+16:51:59 vision exists, skipping: vit_small_patch16_224.augreg_in21k
+16:51:59 vision exists, skipping: vit_base_patch16_224.augreg_in21k
+16:51:59 vision exists, skipping: vit_large_patch16_224.augreg_in21k
+16:51:59 vision exists, skipping: vit_base_patch16_224.mae
+16:51:59 vision exists, skipping: vit_large_patch16_224.mae
+16:51:59 vision exists, skipping: vit_huge_patch14_224.mae
+16:51:59 vision exists, skipping: vit_small_patch14_dinov2.lvd142m
+16:51:59 vision exists, skipping: vit_base_patch14_dinov2.lvd142m
+16:51:59 vision exists, skipping: vit_large_patch14_dinov2.lvd142m
+16:51:59 vision exists, skipping: vit_giant_patch14_dinov2.lvd142m
+16:51:59 vision exists, skipping: vit_base_patch16_clip_224.laion2b
+16:51:59 vision exists, skipping: vit_large_patch14_clip_224.laion2b
+16:51:59 vision exists, skipping: vit_huge_patch14_clip_224.laion2b
+16:51:59 vision exists, skipping: vit_base_patch16_clip_224.laion2b_ft_in12k
+16:51:59 vision exists, skipping: vit_large_patch14_clip_224.laion2b_ft_in12k
+16:51:59 vision exists, skipping: vit_huge_patch14_clip_224.laion2b_ft_in12k
+16:52:01 RUN_ONLY: ['NousResearch/Meta-Llama-3-70B'] | still to extract: ['NousResearch/Meta-Llama-3-70B']
+16:52:01 cleared old downloads: free disk 206 -> 206 GB
+16:52:02 pre-flight: NousResearch/Meta-Llama-3-70B {'weights_gb': 141.1, 'weights_gib': 131.4, 'format': 'safetensors', 'gpu_gib': 95.0, 'cpu_free_gib': 153.8, 'disk_free_gb': 206.1, 'mode': 'gpu+cpu'} max_memory: {0: '80GiB', 'cpu': '137GiB'}
+17:11:35 llm done: NousResearch/Meta-Llama-3-70B feats=(1024, 81, 8192) bpb=1.548 placement=gpu+cpu batch=12 seq=227 (1174s) | free disk 206 -> 205 GB
+17:14:27 diagnostics saved: /content/drive/MyDrive/prh_audit/full/results/diagnostics.csv 4336 rows
+17:14:27 aligning 20 LLMs x 17 vision models x 3 variants
+17:14:31 [huh] vision stats built (4s)
+17:14:43 [huh] NousResearch/Meta-Llama-3-70B: 17 pairs (11s)
+17:14:44 [noclip] vision stats built (1s)
+17:14:50 [noclip] NousResearch/Meta-Llama-3-70B: 17 pairs (6s)
+17:14:51 [std] vision stats built (1s)
+17:14:58 [std] NousResearch/Meta-Llama-3-70B: 17 pairs (7s)

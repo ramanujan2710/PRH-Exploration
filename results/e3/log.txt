@@ -1,0 +1,128 @@
+17:06:35 versions: {'python': '3.13.15', 'torch': '2.11.0+cu130', 'numpy': '2.1.3', 'scipy': '1.16.3', 'sklearn': '1.6.1', 'pylibmgm': '?', 'rosetta': 'fdfad84ea488f29702a61a455be71622c4ff5d49', 'aristotelian': '785054b19c952dca0f605768552ddd50fa9286dc', 'cpus': 48, 'ram_gb': 190, 'gpu': 'NVIDIA RTX PRO 6000 Blackwell Server Edition'}
+17:06:35 84 combinations x 5 seeds = 420 alignment runs; seeds = [734796314, 576165995, 2197670066, 839703249, 2584932063]
+17:06:45 downloading 50 files, 43.3 GB; free disk 208 GB
+17:08:47 embeddings ready
+17:08:57 background job started (pid 6381): one alignment at a time, its 30 restarts on 30 cores. Task log: /content/drive/MyDrive/prh_audit/e3/worker_log.txt; live progress bars: /content/drive/MyDrive/prh_audit/e3/worker_stdout.txt
+17:08:57 progress: {'align_done': 0, 'align_total': 420, 'geometry_done': 0, 'geometry_total': 84, 'eta_hours': nan}
+17:17:02 metrics 1/84 (474s) | background: {'align_done': 0, 'align_total': 420, 'geometry_done': 84, 'geometry_total': 84, 'eta_hours': nan}
+18:14:25 metrics 11/84 (3917s) | background: {'align_done': 0, 'align_total': 420, 'geometry_done': 84, 'geometry_total': 84, 'eta_hours': nan}
+19:03:38 versions: {'python': '3.13.15', 'torch': '2.11.0+cu130', 'numpy': '2.1.3', 'scipy': '1.16.3', 'sklearn': '1.6.1', 'pylibmgm': '?', 'rosetta': 'fdfad84ea488f29702a61a455be71622c4ff5d49', 'aristotelian': '785054b19c952dca0f605768552ddd50fa9286dc', 'cpus': 48, 'ram_gb': 190, 'gpu': 'NVIDIA RTX PRO 6000 Blackwell Server Edition'}
+19:03:38 84 combinations x 5 seeds = 420 alignment runs; seeds = [734796314, 576165995, 2197670066, 839703249, 2584932063]
+19:03:39 downloading 50 files, 43.3 GB; free disk 208 GB
+19:05:46 embeddings ready
+19:05:59 background job: 419 pending tasks on 12 parallel workers, each alignment's 30 restarts on 4 processes. Logs: /content/drive/MyDrive/prh_audit/e3/worker_log_*.txt; progress bars: /content/drive/MyDrive/prh_audit/e3/worker_stdout_*.txt
+19:06:00 progress: {'align_done': 1, 'align_total': 420, 'geometry_done': 84, 'geometry_total': 84, 'eta_hours': np.float64(44.9)}
+19:06:54 metrics 1/84 (35s) | background: {'align_done': 1, 'align_total': 420, 'geometry_done': 84, 'geometry_total': 84, 'eta_hours': np.float64(44.9)}
+19:11:43 metrics 11/84 (324s) | background: {'align_done': 1, 'align_total': 420, 'geometry_done': 84, 'geometry_total': 84, 'eta_hours': np.float64(44.9)}
+19:14:54 metrics 21/84 (515s) | background: {'align_done': 1, 'align_total': 420, 'geometry_done': 84, 'geometry_total': 84, 'eta_hours': np.float64(44.9)}
+19:17:56 metrics 31/84 (697s) | background: {'align_done': 1, 'align_total': 420, 'geometry_done': 84, 'geometry_total': 84, 'eta_hours': np.float64(44.9)}
+19:20:22 metrics 41/84 (843s) | background: {'align_done': 1, 'align_total': 420, 'geometry_done': 84, 'geometry_total': 84, 'eta_hours': np.float64(44.9)}
+19:23:05 metrics 51/84 (1006s) | background: {'align_done': 1, 'align_total': 420, 'geometry_done': 84, 'geometry_total': 84, 'eta_hours': np.float64(44.9)}
+19:25:27 metrics 61/84 (1148s) | background: {'align_done': 1, 'align_total': 420, 'geometry_done': 84, 'geometry_total': 84, 'eta_hours': np.float64(44.9)}
+19:28:08 metrics 71/84 (1309s) | background: {'align_done': 1, 'align_total': 420, 'geometry_done': 84, 'geometry_total': 84, 'eta_hours': np.float64(44.9)}
+19:30:34 metrics 81/84 (1455s) | background: {'align_done': 1, 'align_total': 420, 'geometry_done': 84, 'geometry_total': 84, 'eta_hours': np.float64(44.9)}
+19:31:16 GPU metrics done {'align_done': 1, 'align_total': 420, 'geometry_done': 84, 'geometry_total': 84, 'eta_hours': np.float64(44.9)}
+19:31:16 waiting: {'align_done': 1, 'align_total': 420, 'geometry_done': 84, 'geometry_total': 84, 'eta_hours': np.float64(44.9)} | current: geometric initialization: 100%|██████████| 30/30 [08:16<00:00, 10.68s/it]
+19:41:16 waiting: {'align_done': 1, 'align_total': 420, 'geometry_done': 84, 'geometry_total': 84, 'eta_hours': np.float64(44.9)} | current: geometric initialization: 100%|██████████| 30/30 [08:16<00:00, 10.68s/it]
+19:51:16 waiting: {'align_done': 2, 'align_total': 420, 'geometry_done': 84, 'geometry_total': 84, 'eta_hours': np.float64(35.2)} | current: geometric initialization: 100%|██████████| 30/30 [08:16<00:00, 10.68s/it]
+20:01:16 waiting: {'align_done': 5, 'align_total': 420, 'geometry_done': 84, 'geometry_total': 84, 'eta_hours': np.float64(31.3)} | current: geometric initialization: 100%|██████████| 30/30 [08:16<00:00, 10.68s/it]
+20:11:16 waiting: {'align_done': 11, 'align_total': 420, 'geometry_done': 84, 'geometry_total': 84, 'eta_hours': np.float64(29.5)} | current: geometric initialization: 100%|██████████| 30/30 [08:16<00:00, 10.68s/it]
+20:21:16 waiting: {'align_done': 14, 'align_total': 420, 'geometry_done': 84, 'geometry_total': 84, 'eta_hours': np.float64(29.8)} | current: geometric initialization:  30%|███       | 9/30 [01:29<02:55,  8.33s/it]
+20:31:16 waiting: {'align_done': 16, 'align_total': 420, 'geometry_done': 84, 'geometry_total': 84, 'eta_hours': np.float64(26.6)} | current: geometric initialization:  93%|█████████▎| 28/30 [04:48<00:19,  9.87s/it]
+20:41:16 waiting: {'align_done': 21, 'align_total': 420, 'geometry_done': 84, 'geometry_total': 84, 'eta_hours': np.float64(22.8)} | current: geometric initialization:  93%|█████████▎| 28/30 [04:48<00:19,  9.87s/it]
+20:51:16 waiting: {'align_done': 26, 'align_total': 420, 'geometry_done': 84, 'geometry_total': 84, 'eta_hours': np.float64(20.3)} | current: geometric initialization:  93%|█████████▎| 28/30 [04:48<00:19,  9.87s/it]
+21:01:16 waiting: {'align_done': 30, 'align_total': 420, 'geometry_done': 84, 'geometry_total': 84, 'eta_hours': np.float64(19.6)} | current: geometric initialization:  93%|█████████▎| 28/30 [04:48<00:19,  9.87s/it]
+21:11:16 waiting: {'align_done': 39, 'align_total': 420, 'geometry_done': 84, 'geometry_total': 84, 'eta_hours': np.float64(18.7)} | current: geometric initialization:   0%|          | 0/30 [00:00<?, ?it/s]
+21:21:16 waiting: {'align_done': 43, 'align_total': 420, 'geometry_done': 84, 'geometry_total': 84, 'eta_hours': np.float64(17.4)} | current: geometric initialization: 100%|██████████| 30/30 [05:26<00:00, 10.47s/it]
+21:31:16 waiting: {'align_done': 48, 'align_total': 420, 'geometry_done': 84, 'geometry_total': 84, 'eta_hours': np.float64(16.3)} | current: geometric initialization: 100%|██████████| 30/30 [05:26<00:00, 10.47s/it]
+21:41:16 waiting: {'align_done': 54, 'align_total': 420, 'geometry_done': 84, 'geometry_total': 84, 'eta_hours': np.float64(15.2)} | current: geometric initialization:  97%|█████████▋| 29/30 [06:13<00:26, 26.01s/it]
+21:51:16 waiting: {'align_done': 60, 'align_total': 420, 'geometry_done': 84, 'geometry_total': 84, 'eta_hours': np.float64(14.6)} | current: geometric initialization:  97%|█████████▋| 29/30 [06:13<00:26, 26.01s/it]
+22:01:16 waiting: {'align_done': 64, 'align_total': 420, 'geometry_done': 84, 'geometry_total': 84, 'eta_hours': np.float64(14.3)} | current: geometric initialization:  97%|█████████▋| 29/30 [06:00<00:24, 24.21s/it]
+22:11:16 waiting: {'align_done': 68, 'align_total': 420, 'geometry_done': 84, 'geometry_total': 84, 'eta_hours': np.float64(13.8)} | current: geometric initialization:  73%|███████▎  | 22/30 [05:53<02:48, 21.06s/it]
+22:21:17 waiting: {'align_done': 77, 'align_total': 420, 'geometry_done': 84, 'geometry_total': 84, 'eta_hours': np.float64(12.8)} | current: geometric initialization:  97%|█████████▋| 29/30 [05:52<00:23, 23.46s/it]
+22:31:17 waiting: {'align_done': 79, 'align_total': 420, 'geometry_done': 84, 'geometry_total': 84, 'eta_hours': np.float64(12.6)} | current: geometric initialization:  43%|████▎     | 13/30 [01:53<01:28,  5.20s/it]
+22:41:17 waiting: {'align_done': 86, 'align_total': 420, 'geometry_done': 84, 'geometry_total': 84, 'eta_hours': np.float64(12.5)} | current: geometric initialization: 100%|██████████| 30/30 [05:39<00:00, 16.72s/it]
+22:51:17 waiting: {'align_done': 88, 'align_total': 420, 'geometry_done': 84, 'geometry_total': 84, 'eta_hours': np.float64(12.2)} | current: geometric initialization: 100%|██████████| 30/30 [05:39<00:00, 16.72s/it]
+23:01:17 waiting: {'align_done': 90, 'align_total': 420, 'geometry_done': 84, 'geometry_total': 84, 'eta_hours': np.float64(12.1)} | current: geometric initialization: 100%|██████████| 30/30 [05:39<00:00, 16.72s/it]
+23:11:17 waiting: {'align_done': 95, 'align_total': 420, 'geometry_done': 84, 'geometry_total': 84, 'eta_hours': np.float64(11.9)} | current: geometric initialization: 100%|██████████| 30/30 [05:39<00:00, 16.72s/it]
+23:21:17 waiting: {'align_done': 99, 'align_total': 420, 'geometry_done': 84, 'geometry_total': 84, 'eta_hours': np.float64(11.9)} | current: geometric initialization: 100%|██████████| 30/30 [05:39<00:00, 16.72s/it]
+23:31:17 waiting: {'align_done': 103, 'align_total': 420, 'geometry_done': 84, 'geometry_total': 84, 'eta_hours': np.float64(11.6)} | current: geometric initialization: 100%|██████████| 30/30 [05:39<00:00, 16.72s/it]
+23:41:17 waiting: {'align_done': 107, 'align_total': 420, 'geometry_done': 84, 'geometry_total': 84, 'eta_hours': np.float64(11.7)} | current: geometric initialization:  80%|████████  | 24/30 [04:02<01:04, 10.79s/it]
+23:51:17 waiting: {'align_done': 110, 'align_total': 420, 'geometry_done': 84, 'geometry_total': 84, 'eta_hours': np.float64(11.6)} | current: geometric initialization:  97%|█████████▋| 29/30 [04:25<00:07,  7.62s/it]
+00:01:17 waiting: {'align_done': 116, 'align_total': 420, 'geometry_done': 84, 'geometry_total': 84, 'eta_hours': np.float64(11.3)} | current: geometric initialization:  97%|█████████▋| 29/30 [04:25<00:07,  7.62s/it]
+00:11:17 waiting: {'align_done': 119, 'align_total': 420, 'geometry_done': 84, 'geometry_total': 84, 'eta_hours': np.float64(11.0)} | current: geometric initialization:  97%|█████████▋| 29/30 [04:25<00:07,  7.62s/it]
+00:21:17 waiting: {'align_done': 125, 'align_total': 420, 'geometry_done': 84, 'geometry_total': 84, 'eta_hours': np.float64(11.0)} | current: geometric initialization:  97%|█████████▋| 29/30 [04:25<00:07,  7.62s/it]
+00:31:17 waiting: {'align_done': 129, 'align_total': 420, 'geometry_done': 84, 'geometry_total': 84, 'eta_hours': np.float64(10.9)} | current: geometric initialization: 100%|██████████| 30/30 [04:29<00:00, 11.01s/it]
+00:41:17 waiting: {'align_done': 134, 'align_total': 420, 'geometry_done': 84, 'geometry_total': 84, 'eta_hours': np.float64(10.6)} | current: geometric initialization: 100%|██████████| 30/30 [04:29<00:00, 11.01s/it]
+00:51:17 waiting: {'align_done': 139, 'align_total': 420, 'geometry_done': 84, 'geometry_total': 84, 'eta_hours': np.float64(10.4)} | current: geometric initialization:  70%|███████   | 21/30 [03:08<01:24,  9.36s/it]
+01:01:17 waiting: {'align_done': 144, 'align_total': 420, 'geometry_done': 84, 'geometry_total': 84, 'eta_hours': np.float64(10.2)} | current: geometric initialization: 100%|██████████| 30/30 [05:07<00:00, 24.72s/it]
+01:11:17 waiting: {'align_done': 150, 'align_total': 420, 'geometry_done': 84, 'geometry_total': 84, 'eta_hours': np.float64(9.8)} | current: geometric initialization:   7%|▋         | 2/30 [01:01<13:24, 28.72s/it]
+01:21:18 waiting: {'align_done': 154, 'align_total': 420, 'geometry_done': 84, 'geometry_total': 84, 'eta_hours': np.float64(9.7)} | current: geometric initialization:   3%|▎         | 1/30 [00:33<15:59, 33.09s/it]
+01:31:18 waiting: {'align_done': 159, 'align_total': 420, 'geometry_done': 84, 'geometry_total': 84, 'eta_hours': np.float64(9.4)} | current: geometric initialization:  20%|██        | 6/30 [01:37<06:37, 16.56s/it]
+01:41:18 waiting: {'align_done': 165, 'align_total': 420, 'geometry_done': 84, 'geometry_total': 84, 'eta_hours': np.float64(9.2)} | current: geometric initialization:  93%|█████████▎| 28/30 [06:34<00:28, 14.16s/it]
+01:51:18 waiting: {'align_done': 169, 'align_total': 420, 'geometry_done': 84, 'geometry_total': 84, 'eta_hours': np.float64(8.9)} | current: geometric initialization:  93%|█████████▎| 28/30 [04:38<00:32, 16.03s/it]
+02:01:18 waiting: {'align_done': 173, 'align_total': 420, 'geometry_done': 84, 'geometry_total': 84, 'eta_hours': np.float64(8.8)} | current: geometric initialization:  93%|█████████▎| 28/30 [04:38<00:32, 16.03s/it]
+02:11:18 waiting: {'align_done': 179, 'align_total': 420, 'geometry_done': 84, 'geometry_total': 84, 'eta_hours': np.float64(8.5)} | current: geometric initialization:  93%|█████████▎| 28/30 [04:38<00:32, 16.03s/it]
+02:21:18 waiting: {'align_done': 184, 'align_total': 420, 'geometry_done': 84, 'geometry_total': 84, 'eta_hours': np.float64(8.3)} | current: geometric initialization:  93%|█████████▎| 28/30 [04:38<00:32, 16.03s/it]
+02:31:18 waiting: {'align_done': 187, 'align_total': 420, 'geometry_done': 84, 'geometry_total': 84, 'eta_hours': np.float64(8.2)} | current: geometric initialization:  93%|█████████▎| 28/30 [04:38<00:32, 16.03s/it]
+02:41:18 waiting: {'align_done': 195, 'align_total': 420, 'geometry_done': 84, 'geometry_total': 84, 'eta_hours': np.float64(7.8)} | current: geometric initialization:  93%|█████████▎| 28/30 [04:38<00:32, 16.03s/it]
+02:51:18 waiting: {'align_done': 197, 'align_total': 420, 'geometry_done': 84, 'geometry_total': 84, 'eta_hours': np.float64(7.7)} | current: geometric initialization:  93%|█████████▎| 28/30 [04:38<00:32, 16.03s/it]
+03:01:18 waiting: {'align_done': 200, 'align_total': 420, 'geometry_done': 84, 'geometry_total': 84, 'eta_hours': np.float64(7.6)} | current: geometric initialization:  97%|█████████▋| 29/30 [03:40<00:07,  7.08s/it]
+03:11:19 waiting: {'align_done': 204, 'align_total': 420, 'geometry_done': 84, 'geometry_total': 84, 'eta_hours': np.float64(7.6)} | current: geometric initialization:  97%|█████████▋| 29/30 [03:40<00:07,  7.08s/it]
+03:21:19 waiting: {'align_done': 206, 'align_total': 420, 'geometry_done': 84, 'geometry_total': 84, 'eta_hours': np.float64(7.6)} | current: geometric initialization:  97%|█████████▋| 29/30 [03:40<00:07,  7.08s/it]
+03:31:19 waiting: {'align_done': 210, 'align_total': 420, 'geometry_done': 84, 'geometry_total': 84, 'eta_hours': np.float64(7.6)} | current: geometric initialization:  97%|█████████▋| 29/30 [03:40<00:07,  7.08s/it]
+03:41:19 waiting: {'align_done': 211, 'align_total': 420, 'geometry_done': 84, 'geometry_total': 84, 'eta_hours': np.float64(7.5)} | current: geometric initialization:  97%|█████████▋| 29/30 [03:40<00:07,  7.08s/it]
+03:51:19 waiting: {'align_done': 215, 'align_total': 420, 'geometry_done': 84, 'geometry_total': 84, 'eta_hours': np.float64(7.4)} | current: geometric initialization: 100%|██████████| 30/30 [04:23<00:00,  6.46s/it]
+04:01:19 waiting: {'align_done': 221, 'align_total': 420, 'geometry_done': 84, 'geometry_total': 84, 'eta_hours': np.float64(7.2)} | current: geometric initialization: 100%|██████████| 30/30 [04:23<00:00,  6.46s/it]
+04:11:19 waiting: {'align_done': 226, 'align_total': 420, 'geometry_done': 84, 'geometry_total': 84, 'eta_hours': np.float64(7.1)} | current: geometric initialization:  50%|█████     | 15/30 [02:14<01:40,  6.70s/it]
+04:21:19 waiting: {'align_done': 233, 'align_total': 420, 'geometry_done': 84, 'geometry_total': 84, 'eta_hours': np.float64(6.8)} | current: geometric initialization:  87%|████████▋ | 26/30 [05:47<01:36, 24.02s/it]
+04:31:20 waiting: {'align_done': 239, 'align_total': 420, 'geometry_done': 84, 'geometry_total': 84, 'eta_hours': np.float64(6.5)} | current: geometric initialization:   0%|          | 0/30 [00:00<?, ?it/s]
+04:41:20 waiting: {'align_done': 246, 'align_total': 420, 'geometry_done': 84, 'geometry_total': 84, 'eta_hours': np.float64(6.2)} | current: geometric initialization: 100%|██████████| 30/30 [07:27<00:00, 10.00s/it]
+04:51:20 waiting: {'align_done': 254, 'align_total': 420, 'geometry_done': 84, 'geometry_total': 84, 'eta_hours': np.float64(5.8)} | current: geometric initialization:   0%|          | 0/30 [00:00<?, ?it/s]
+05:01:20 waiting: {'align_done': 260, 'align_total': 420, 'geometry_done': 84, 'geometry_total': 84, 'eta_hours': np.float64(5.6)} | current: geometric initialization: 100%|██████████| 30/30 [05:57<00:00, 14.24s/it]
+05:11:20 waiting: {'align_done': 266, 'align_total': 420, 'geometry_done': 84, 'geometry_total': 84, 'eta_hours': np.float64(5.3)} | current: geometric initialization:  83%|████████▎ | 25/30 [04:25<00:48,  9.61s/it]
+05:21:20 waiting: {'align_done': 270, 'align_total': 420, 'geometry_done': 84, 'geometry_total': 84, 'eta_hours': np.float64(5.1)} | current: geometric initialization:  93%|█████████▎| 28/30 [05:28<00:28, 14.46s/it]
+05:31:20 waiting: {'align_done': 273, 'align_total': 420, 'geometry_done': 84, 'geometry_total': 84, 'eta_hours': np.float64(5.0)} | current: geometric initialization:  93%|█████████▎| 28/30 [05:28<00:28, 14.46s/it]
+05:41:20 waiting: {'align_done': 274, 'align_total': 420, 'geometry_done': 84, 'geometry_total': 84, 'eta_hours': np.float64(5.0)} | current: geometric initialization:  93%|█████████▎| 28/30 [05:28<00:28, 14.46s/it]
+05:51:21 waiting: {'align_done': 276, 'align_total': 420, 'geometry_done': 84, 'geometry_total': 84, 'eta_hours': np.float64(4.9)} | current: geometric initialization:  93%|█████████▎| 28/30 [05:28<00:28, 14.46s/it]
+06:01:21 waiting: {'align_done': 280, 'align_total': 420, 'geometry_done': 84, 'geometry_total': 84, 'eta_hours': np.float64(4.9)} | current: geometric initialization:  93%|█████████▎| 28/30 [05:28<00:28, 14.46s/it]
+06:11:21 waiting: {'align_done': 281, 'align_total': 420, 'geometry_done': 84, 'geometry_total': 84, 'eta_hours': np.float64(4.9)} | current: geometric initialization:   0%|          | 0/30 [00:00<?, ?it/s]
+06:21:21 waiting: {'align_done': 282, 'align_total': 420, 'geometry_done': 84, 'geometry_total': 84, 'eta_hours': np.float64(4.9)} | current: geometric initialization: 100%|██████████| 30/30 [03:39<00:00,  6.56s/it]
+06:31:21 waiting: {'align_done': 286, 'align_total': 420, 'geometry_done': 84, 'geometry_total': 84, 'eta_hours': np.float64(4.7)} | current: geometric initialization: 100%|██████████| 30/30 [03:39<00:00,  6.56s/it]
+06:41:21 waiting: {'align_done': 288, 'align_total': 420, 'geometry_done': 84, 'geometry_total': 84, 'eta_hours': np.float64(4.7)} | current: geometric initialization: 100%|██████████| 30/30 [03:39<00:00,  6.56s/it]
+06:51:21 waiting: {'align_done': 294, 'align_total': 420, 'geometry_done': 84, 'geometry_total': 84, 'eta_hours': np.float64(4.5)} | current: geometric initialization: 100%|██████████| 30/30 [03:39<00:00,  6.56s/it]
+07:01:22 waiting: {'align_done': 300, 'align_total': 420, 'geometry_done': 84, 'geometry_total': 84, 'eta_hours': np.float64(4.3)} | current: geometric initialization:  53%|█████▎    | 16/30 [01:52<01:12,  5.15s/it]
+07:11:22 waiting: {'align_done': 304, 'align_total': 420, 'geometry_done': 84, 'geometry_total': 84, 'eta_hours': np.float64(4.1)} | current: geometric initialization: 100%|██████████| 30/30 [04:01<00:00,  7.26s/it]
+07:21:22 waiting: {'align_done': 310, 'align_total': 420, 'geometry_done': 84, 'geometry_total': 84, 'eta_hours': np.float64(3.9)} | current: geometric initialization:  23%|██▎       | 7/30 [01:31<04:28, 11.68s/it]
+07:31:22 waiting: {'align_done': 317, 'align_total': 420, 'geometry_done': 84, 'geometry_total': 84, 'eta_hours': np.float64(3.6)} | current: geometric initialization:  93%|█████████▎| 28/30 [04:45<00:29, 14.88s/it]
+07:41:22 waiting: {'align_done': 325, 'align_total': 420, 'geometry_done': 84, 'geometry_total': 84, 'eta_hours': np.float64(3.3)} | current: geometric initialization:   3%|▎         | 1/30 [01:42<49:35, 102.60s/it]
+07:51:22 waiting: {'align_done': 331, 'align_total': 420, 'geometry_done': 84, 'geometry_total': 84, 'eta_hours': np.float64(3.1)} | current: geometric initialization:  40%|████      | 12/30 [01:29<01:43,  5.73s/it]
+08:01:23 waiting: {'align_done': 335, 'align_total': 420, 'geometry_done': 84, 'geometry_total': 84, 'eta_hours': np.float64(2.9)} | current: geometric initialization:  90%|█████████ | 27/30 [04:06<00:22,  7.45s/it]
+08:11:23 waiting: {'align_done': 338, 'align_total': 420, 'geometry_done': 84, 'geometry_total': 84, 'eta_hours': np.float64(2.8)} | current: geometric initialization:  17%|█▋        | 5/30 [01:03<06:06, 14.64s/it]
+08:21:23 waiting: {'align_done': 340, 'align_total': 420, 'geometry_done': 84, 'geometry_total': 84, 'eta_hours': np.float64(2.7)} | current: geometric initialization:  97%|█████████▋| 29/30 [04:53<00:09,  9.77s/it]
+08:31:23 waiting: {'align_done': 343, 'align_total': 420, 'geometry_done': 84, 'geometry_total': 84, 'eta_hours': np.float64(2.6)} | current: geometric initialization:  97%|█████████▋| 29/30 [04:53<00:09,  9.77s/it]
+08:41:23 waiting: {'align_done': 344, 'align_total': 420, 'geometry_done': 84, 'geometry_total': 84, 'eta_hours': np.float64(2.6)} | current: geometric initialization:  97%|█████████▋| 29/30 [04:53<00:09,  9.77s/it]
+08:51:23 waiting: {'align_done': 346, 'align_total': 420, 'geometry_done': 84, 'geometry_total': 84, 'eta_hours': np.float64(2.5)} | current: geometric initialization:  97%|█████████▋| 29/30 [04:53<00:09,  9.77s/it]
+09:01:23 waiting: {'align_done': 346, 'align_total': 420, 'geometry_done': 84, 'geometry_total': 84, 'eta_hours': np.float64(2.5)} | current: geometric initialization:  97%|█████████▋| 29/30 [04:53<00:09,  9.77s/it]
+09:11:24 waiting: {'align_done': 348, 'align_total': 420, 'geometry_done': 84, 'geometry_total': 84, 'eta_hours': np.float64(2.5)} | current: geometric initialization:  97%|█████████▋| 29/30 [04:53<00:09,  9.77s/it]
+09:21:24 waiting: {'align_done': 349, 'align_total': 420, 'geometry_done': 84, 'geometry_total': 84, 'eta_hours': np.float64(2.5)} | current: geometric initialization: 100%|██████████| 30/30 [04:26<00:00,  9.95s/it]
+09:31:24 waiting: {'align_done': 351, 'align_total': 420, 'geometry_done': 84, 'geometry_total': 84, 'eta_hours': np.float64(2.4)} | current: geometric initialization: 100%|██████████| 30/30 [04:26<00:00,  9.95s/it]
+09:41:24 waiting: {'align_done': 352, 'align_total': 420, 'geometry_done': 84, 'geometry_total': 84, 'eta_hours': np.float64(2.4)} | current: geometric initialization: 100%|██████████| 30/30 [04:26<00:00,  9.95s/it]
+09:51:24 waiting: {'align_done': 355, 'align_total': 420, 'geometry_done': 84, 'geometry_total': 84, 'eta_hours': np.float64(2.3)} | current: geometric initialization: 100%|██████████| 30/30 [04:26<00:00,  9.95s/it]
+10:01:24 waiting: {'align_done': 359, 'align_total': 420, 'geometry_done': 84, 'geometry_total': 84, 'eta_hours': np.float64(2.1)} | current: geometric initialization: 100%|██████████| 30/30 [04:26<00:00,  9.95s/it]
+10:11:25 waiting: {'align_done': 363, 'align_total': 420, 'geometry_done': 84, 'geometry_total': 84, 'eta_hours': np.float64(2.0)} | current: geometric initialization: 100%|██████████| 30/30 [04:56<00:00,  8.62s/it]
+10:21:25 waiting: {'align_done': 367, 'align_total': 420, 'geometry_done': 84, 'geometry_total': 84, 'eta_hours': np.float64(1.8)} | current: geometric initialization: 100%|██████████| 30/30 [04:56<00:00,  8.62s/it]
+10:31:25 waiting: {'align_done': 373, 'align_total': 420, 'geometry_done': 84, 'geometry_total': 84, 'eta_hours': np.float64(1.6)} | current: geometric initialization:   0%|          | 0/30 [00:00<?, ?it/s]
+10:41:25 waiting: {'align_done': 376, 'align_total': 420, 'geometry_done': 84, 'geometry_total': 84, 'eta_hours': np.float64(1.5)} | current: geometric initialization: 100%|██████████| 30/30 [04:51<00:00, 13.02s/it]
+10:51:25 waiting: {'align_done': 384, 'align_total': 420, 'geometry_done': 84, 'geometry_total': 84, 'eta_hours': np.float64(1.3)} | current: geometric initialization: 100%|██████████| 30/30 [04:51<00:00, 13.02s/it]
+11:01:26 waiting: {'align_done': 390, 'align_total': 420, 'geometry_done': 84, 'geometry_total': 84, 'eta_hours': np.float64(1.0)} | current: geometric initialization:  97%|█████████▋| 29/30 [07:02<00:18, 18.18s/it]
+11:11:26 waiting: {'align_done': 393, 'align_total': 420, 'geometry_done': 84, 'geometry_total': 84, 'eta_hours': np.float64(0.9)} | current: geometric initialization:  87%|████████▋ | 26/30 [06:47<01:13, 18.26s/it]
+11:21:26 waiting: {'align_done': 399, 'align_total': 420, 'geometry_done': 84, 'geometry_total': 84, 'eta_hours': np.float64(0.7)} | current: geometric initialization:  97%|█████████▋| 29/30 [05:37<00:11, 11.07s/it]
+11:31:26 waiting: {'align_done': 403, 'align_total': 420, 'geometry_done': 84, 'geometry_total': 84, 'eta_hours': np.float64(0.6)} | current: geometric initialization:  97%|█████████▋| 29/30 [05:37<00:11, 11.07s/it]
+11:41:27 waiting: {'align_done': 408, 'align_total': 420, 'geometry_done': 84, 'geometry_total': 84, 'eta_hours': np.float64(0.4)} | current: geometric initialization:  97%|█████████▋| 29/30 [05:37<00:11, 11.07s/it]
+11:51:27 waiting: {'align_done': 413, 'align_total': 420, 'geometry_done': 84, 'geometry_total': 84, 'eta_hours': np.float64(0.2)} | current: geometric initialization:  97%|█████████▋| 29/30 [05:37<00:11, 11.07s/it]
+12:01:27 waiting: {'align_done': 415, 'align_total': 420, 'geometry_done': 84, 'geometry_total': 84, 'eta_hours': np.float64(0.2)} | current: geometric initialization:  97%|█████████▋| 29/30 [05:37<00:11, 11.07s/it]
+12:11:27 waiting: {'align_done': 419, 'align_total': 420, 'geometry_done': 84, 'geometry_total': 84, 'eta_hours': np.float64(0.0)} | current: geometric initialization:  97%|█████████▋| 29/30 [05:37<00:11, 11.07s/it]
+12:21:30 checker: 13 PASS / 14
+12:21:30 84/84 combinations have all 5 seeds
+12:21:31 H0 replication (paper: R2 0.73, Spearman -0.90): [{'r2': 0.752, 'spearman': -0.895}]

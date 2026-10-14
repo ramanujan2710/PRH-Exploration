@@ -1,0 +1,1 @@
+{"task": {"kind": "geometry", "dataset": "coco_train2014", "vision": "franca_vit-g14@224_laion_mean", "language": "qwen3-8b-gen_69445574b3021b8a2733e87d8603d769"}, "metrics": {"cka": 0.6352967737167051, "mutual_knn": 0.12249000370502472, "tsi": 0.6662532091140747, "qsi": 0.6570608615875244}, "seconds": 5.875661373138428}

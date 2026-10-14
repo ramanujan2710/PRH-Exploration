@@ -1,0 +1,20 @@
+check,result,detail
+worker: no FAILED tasks,PASS,
+all alignment and geometry runs present,PASS,0
+"qwen3-8b-avg on DenselyCaptionedImages: Rosetta's shape and caption-slot pattern, finite",PASS,"(7805, 1, 4096) vs (7805, 1, 768)"
+"qwen3-8b-eol on DenselyCaptionedImages: Rosetta's shape and caption-slot pattern, finite",PASS,"(7805, 1, 4096) vs (7805, 1, 768)"
+"llama3-8b-avg on DenselyCaptionedImages: Rosetta's shape and caption-slot pattern, finite",PASS,"(7805, 1, 4096) vs (7805, 1, 768)"
+"llama3-8b-eol on DenselyCaptionedImages: Rosetta's shape and caption-slot pattern, finite",PASS,"(7805, 1, 4096) vs (7805, 1, 768)"
+"qwen3-8b-avg on DOCCIDataset: Rosetta's shape and caption-slot pattern, finite",PASS,"(14847, 1, 4096) vs (14847, 1, 768)"
+"qwen3-8b-eol on DOCCIDataset: Rosetta's shape and caption-slot pattern, finite",PASS,"(14847, 1, 4096) vs (14847, 1, 768)"
+"llama3-8b-avg on DOCCIDataset: Rosetta's shape and caption-slot pattern, finite",PASS,"(14847, 1, 4096) vs (14847, 1, 768)"
+"llama3-8b-eol on DOCCIDataset: Rosetta's shape and caption-slot pattern, finite",PASS,"(14847, 1, 4096) vs (14847, 1, 768)"
+"qwen3-8b-avg on coco_val2014: Rosetta's shape and caption-slot pattern, finite",PASS,"(40504, 7, 4096) vs (40504, 7, 768)"
+"qwen3-8b-eol on coco_val2014: Rosetta's shape and caption-slot pattern, finite",PASS,"(40504, 7, 4096) vs (40504, 7, 768)"
+"llama3-8b-avg on coco_val2014: Rosetta's shape and caption-slot pattern, finite",PASS,"(40504, 7, 4096) vs (40504, 7, 768)"
+"llama3-8b-eol on coco_val2014: Rosetta's shape and caption-slot pattern, finite",PASS,"(40504, 7, 4096) vs (40504, 7, 768)"
+"qwen3-8b-avg: CKA with dinov3_vit-7b16@512_mean > 0.05 paired, |CKA| < 0.02 shuffled",PASS,"paired 0.286, shuffled -0.0002"
+"qwen3-8b-eol: CKA with dinov3_vit-7b16@512_mean > 0.05 paired, |CKA| < 0.02 shuffled",PASS,"paired 0.380, shuffled -0.0003"
+"llama3-8b-avg: CKA with dinov3_vit-7b16@512_mean > 0.05 paired, |CKA| < 0.02 shuffled",PASS,"paired 0.477, shuffled -0.0006"
+"llama3-8b-eol: CKA with dinov3_vit-7b16@512_mean > 0.05 paired, |CKA| < 0.02 shuffled",PASS,"paired 0.421, shuffled -0.0007"
+"FOSCTTM in [0, 1] on all 40,504 COCO val pairs",PASS,"[0.191, 0.194, 0.24, 0.245, 0.249, 0.257, 0.261, 0.265]"

@@ -1,0 +1,209 @@
+13:59:02 device: NVIDIA RTX PRO 6000 Blackwell Server Edition | transformers 5.19.0 | free disk GB 206 | run dir: /content/drive/MyDrive/prh_audit/e2prompt
+13:59:13 dataset: 1024 captions; first: 'Figure 2 of Paper. Pseudorhabdosynochus sulamericanus from Hyporthodus haifensis'
+13:59:15 to extract: ['bigscience/bloomz-560m', 'bigscience/bloomz-1b1', 'bigscience/bloomz-1b7', 'bigscience/bloomz-3b', 'bigscience/bloomz-7b1', 'openlm-research/open_llama_3b', 'openlm-research/open_llama_7b', 'openlm-research/open_llama_13b', 'huggyllama/llama-7b', 'huggyllama/llama-13b', 'huggyllama/llama-30b', 'huggyllama/llama-65b', 'allenai/OLMo-1B-hf', 'allenai/OLMo-7B-hf', 'google/gemma-2b', 'google/gemma-7b', 'mistralai/Mistral-7B-v0.1', 'mistralai/Mixtral-8x7B-v0.1', 'NousResearch/Meta-Llama-3-8B', 'NousResearch/Meta-Llama-3-70B']
+13:59:15 cleared old downloads: free disk 206 -> 206 GB
+13:59:16 pre-flight: bigscience/bloomz-560m {'weights_gb': 1.1, 'weights_gib': 1.0, 'format': 'safetensors', 'gpu_gib': 95.0, 'cpu_free_gib': 171.2, 'disk_free_gb': 205.5, 'mode': 'gpu'} | readouts: ['eol', 'eol_alt', 'neutral', 'repeat']
+13:59:30 llm done: bigscience/bloomz-560m readouts=['eol', 'eol_alt', 'neutral', 'repeat'] feats=(1024, 25, 1024) placement=gpu batch=32 (13s) | free disk 205 GB
+13:59:30 pre-flight: bigscience/bloomz-1b1 {'weights_gb': 2.1, 'weights_gib': 2.0, 'format': 'safetensors', 'gpu_gib': 95.0, 'cpu_free_gib': 169.7, 'disk_free_gb': 205.3, 'mode': 'gpu'} | readouts: ['eol', 'eol_alt', 'neutral', 'repeat']
+13:59:51 llm done: bigscience/bloomz-1b1 readouts=['eol', 'eol_alt', 'neutral', 'repeat'] feats=(1024, 25, 1536) placement=gpu batch=32 (21s) | free disk 205 GB
+13:59:51 pre-flight: bigscience/bloomz-1b7 {'weights_gb': 3.4, 'weights_gib': 3.2, 'format': 'safetensors', 'gpu_gib': 95.0, 'cpu_free_gib': 169.7, 'disk_free_gb': 205.0, 'mode': 'gpu'} | readouts: ['eol', 'eol_alt', 'neutral', 'repeat']
+14:00:19 llm done: bigscience/bloomz-1b7 readouts=['eol', 'eol_alt', 'neutral', 'repeat'] feats=(1024, 25, 2048) placement=gpu batch=32 (27s) | free disk 205 GB
+14:00:19 pre-flight: allenai/OLMo-1B-hf {'weights_gb': 4.7, 'weights_gib': 4.4, 'format': 'safetensors', 'gpu_gib': 95.0, 'cpu_free_gib': 170.0, 'disk_free_gb': 204.6, 'mode': 'gpu'} | readouts: ['eol', 'eol_alt', 'neutral', 'repeat']
+14:00:45 llm done: allenai/OLMo-1B-hf readouts=['eol', 'eol_alt', 'neutral', 'repeat'] feats=(1024, 17, 2048) placement=gpu batch=32 (26s) | free disk 204 GB
+14:00:46 pre-flight: google/gemma-2b {'weights_gb': 5.0, 'weights_gib': 4.7, 'format': 'safetensors', 'gpu_gib': 95.0, 'cpu_free_gib': 169.9, 'disk_free_gb': 204.3, 'mode': 'gpu'} | readouts: ['eol', 'eol_alt', 'neutral', 'repeat']
+14:01:12 llm done: google/gemma-2b readouts=['eol', 'eol_alt', 'neutral', 'repeat'] feats=(1024, 19, 2048) placement=gpu batch=32 (26s) | free disk 204 GB
+14:01:12 pre-flight: bigscience/bloomz-3b {'weights_gb': 6.0, 'weights_gib': 5.6, 'format': 'safetensors', 'gpu_gib': 95.0, 'cpu_free_gib': 169.9, 'disk_free_gb': 204.0, 'mode': 'gpu'} | readouts: ['eol', 'eol_alt', 'neutral', 'repeat']
+14:01:54 llm done: bigscience/bloomz-3b readouts=['eol', 'eol_alt', 'neutral', 'repeat'] feats=(1024, 31, 2560) placement=gpu batch=32 (42s) | free disk 203 GB
+14:01:54 pre-flight: openlm-research/open_llama_3b {'weights_gb': 6.9, 'weights_gib': 6.4, 'format': 'bin', 'gpu_gib': 95.0, 'cpu_free_gib': 169.9, 'disk_free_gb': 203.3, 'mode': 'gpu'} | readouts: ['eol', 'eol_alt', 'neutral', 'repeat']
+14:02:52 llm done: openlm-research/open_llama_3b readouts=['eol', 'eol_alt', 'neutral', 'repeat'] feats=(1024, 27, 3200) placement=gpu batch=32 (58s) | free disk 203 GB
+14:02:52 pre-flight: huggyllama/llama-7b {'weights_gb': 13.5, 'weights_gib': 12.6, 'format': 'safetensors', 'gpu_gib': 95.0, 'cpu_free_gib': 169.9, 'disk_free_gb': 202.6, 'mode': 'gpu'} | readouts: ['eol', 'eol_alt', 'neutral', 'repeat']
+14:04:02 llm done: huggyllama/llama-7b readouts=['eol', 'eol_alt', 'neutral', 'repeat'] feats=(1024, 33, 4096) placement=gpu batch=32 (70s) | free disk 202 GB
+14:04:02 pre-flight: openlm-research/open_llama_7b {'weights_gb': 13.5, 'weights_gib': 12.6, 'format': 'bin', 'gpu_gib': 95.0, 'cpu_free_gib': 169.8, 'disk_free_gb': 201.5, 'mode': 'gpu'} | readouts: ['eol', 'eol_alt', 'neutral', 'repeat']
+14:05:25 llm done: openlm-research/open_llama_7b readouts=['eol', 'eol_alt', 'neutral', 'repeat'] feats=(1024, 33, 4096) placement=gpu batch=32 (83s) | free disk 200 GB
+14:05:27 pre-flight: bigscience/bloomz-7b1 {'weights_gb': 14.1, 'weights_gib': 13.2, 'format': 'safetensors', 'gpu_gib': 95.0, 'cpu_free_gib': 169.8, 'disk_free_gb': 200.4, 'mode': 'gpu'} | readouts: ['eol', 'eol_alt', 'neutral', 'repeat']
+14:06:38 llm done: bigscience/bloomz-7b1 readouts=['eol', 'eol_alt', 'neutral', 'repeat'] feats=(1024, 31, 4096) placement=gpu batch=32 (71s) | free disk 199 GB
+14:06:38 pre-flight: mistralai/Mistral-7B-v0.1 {'weights_gb': 14.5, 'weights_gib': 13.5, 'format': 'safetensors', 'gpu_gib': 95.0, 'cpu_free_gib': 169.7, 'disk_free_gb': 199.4, 'mode': 'gpu'} | readouts: ['eol', 'eol_alt', 'neutral', 'repeat']
+14:07:53 llm done: mistralai/Mistral-7B-v0.1 readouts=['eol', 'eol_alt', 'neutral', 'repeat'] feats=(1024, 33, 4096) placement=gpu batch=32 (75s) | free disk 198 GB
+14:07:54 pre-flight: NousResearch/Meta-Llama-3-8B {'weights_gb': 16.1, 'weights_gib': 15.0, 'format': 'safetensors', 'gpu_gib': 95.0, 'cpu_free_gib': 169.6, 'disk_free_gb': 198.3, 'mode': 'gpu'} | readouts: ['eol', 'eol_alt', 'neutral', 'repeat']
+14:09:14 llm done: NousResearch/Meta-Llama-3-8B readouts=['eol', 'eol_alt', 'neutral', 'repeat'] feats=(1024, 33, 4096) placement=gpu batch=32 (80s) | free disk 197 GB
+14:09:14 pre-flight: google/gemma-7b {'weights_gb': 17.1, 'weights_gib': 15.9, 'format': 'safetensors', 'gpu_gib': 95.0, 'cpu_free_gib': 169.6, 'disk_free_gb': 197.2, 'mode': 'gpu'} | readouts: ['eol', 'eol_alt', 'neutral', 'repeat']
+14:10:45 llm done: google/gemma-7b readouts=['eol', 'eol_alt', 'neutral', 'repeat'] feats=(1024, 29, 3072) placement=gpu batch=32 (90s) | free disk 196 GB
+14:10:45 pre-flight: huggyllama/llama-13b {'weights_gb': 26.0, 'weights_gib': 24.2, 'format': 'safetensors', 'gpu_gib': 95.0, 'cpu_free_gib': 169.5, 'disk_free_gb': 196.4, 'mode': 'gpu'} | readouts: ['eol', 'eol_alt', 'neutral', 'repeat']
+14:12:56 llm done: huggyllama/llama-13b readouts=['eol', 'eol_alt', 'neutral', 'repeat'] feats=(1024, 41, 5120) placement=gpu batch=32 (132s) | free disk 195 GB
+14:12:57 pre-flight: openlm-research/open_llama_13b {'weights_gb': 26.0, 'weights_gib': 24.2, 'format': 'bin', 'gpu_gib': 95.0, 'cpu_free_gib': 169.5, 'disk_free_gb': 194.7, 'mode': 'gpu'} | readouts: ['eol', 'eol_alt', 'neutral', 'repeat']
+14:15:19 llm done: openlm-research/open_llama_13b readouts=['eol', 'eol_alt', 'neutral', 'repeat'] feats=(1024, 41, 5120) placement=gpu batch=32 (142s) | free disk 193 GB
+14:15:19 pre-flight: allenai/OLMo-7B-hf {'weights_gb': 27.6, 'weights_gib': 25.7, 'format': 'safetensors', 'gpu_gib': 95.0, 'cpu_free_gib': 169.4, 'disk_free_gb': 193.0, 'mode': 'gpu'} | readouts: ['eol', 'eol_alt', 'neutral', 'repeat']
+14:17:22 llm done: allenai/OLMo-7B-hf readouts=['eol', 'eol_alt', 'neutral', 'repeat'] feats=(1024, 33, 4096) placement=gpu batch=32 (123s) | free disk 192 GB
+14:17:22 pre-flight: huggyllama/llama-30b {'weights_gb': 65.1, 'weights_gib': 60.6, 'format': 'safetensors', 'gpu_gib': 95.0, 'cpu_free_gib': 169.4, 'disk_free_gb': 191.9, 'mode': 'gpu'} | readouts: ['eol']
+14:21:12 llm done: huggyllama/llama-30b readouts=['eol'] feats=(1024, 61, 6656) placement=gpu batch=25 (230s) | free disk 191 GB
+14:21:12 pre-flight: mistralai/Mixtral-8x7B-v0.1 {'weights_gb': 93.4, 'weights_gib': 87.0, 'format': 'safetensors', 'gpu_gib': 95.0, 'cpu_free_gib': 169.4, 'disk_free_gb': 191.0, 'mode': 'gpu+cpu'} | readouts: ['eol']
+14:27:57 llm done: mistralai/Mixtral-8x7B-v0.1 readouts=['eol'] feats=(1024, 33, 4096) placement=gpu+cpu batch=32 (405s) | free disk 191 GB
+14:27:58 pre-flight: huggyllama/llama-65b {'weights_gb': 130.6, 'weights_gib': 121.6, 'format': 'safetensors', 'gpu_gib': 95.0, 'cpu_free_gib': 168.9, 'disk_free_gb': 190.8, 'mode': 'gpu+cpu'} | readouts: ['eol']
+14:43:21 LLM FAILED: huggyllama/llama-65b (exit code 1):
+                                               ~~~~~~~~~~~~~~^^^
+      File "/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py", line 1779, in _wrapped_call_impl
+        return self._call_impl(*args, **kwargs)
+               ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+      File "/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py", line 1790, in _call_impl
+        return forward_call(*args, **kwargs)
+      File "/usr/local/lib/python3.13/dist-packages/accelerate/hooks.py", line 192, in new_forward
+        output = module._old_forward(*args, **kwargs)
+      File "/usr/local/lib/python3.13/dist-packages/torch/nn/modules/linear.py", line 134, in forward
+        return F.linear(input, self.weight, self.bias)
+               ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 166.00 MiB. GPU 0 has a total capacity of 94.97 GiB of which 154.56 MiB is free. Process 2685 has 1.47 GiB memory in use. Including non-PyTorch memory, this process has 93.34 GiB memory in use. Of the allocated memory 92.21 GiB is allocated by PyTorch, and 502.68 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://docs.pytorch.org/docs/stable/notes/cuda.html#optimizing-memory-usage-with-pytorch-cuda-alloc-conf)
+14:43:21 pre-flight: NousResearch/Meta-Llama-3-70B {'weights_gb': 141.1, 'weights_gib': 131.4, 'format': 'safetensors', 'gpu_gib': 95.0, 'cpu_free_gib': 171.8, 'disk_free_gb': 191.5, 'mode': 'gpu+cpu'} | readouts: ['eol']
+14:57:40 device: NVIDIA RTX PRO 6000 Blackwell Server Edition | transformers 5.19.0 | free disk GB 207 | run dir: /content/drive/MyDrive/prh_audit/e2prompt
+14:58:02 dataset: 1024 captions; first: 'Figure 2 of Paper. Pseudorhabdosynochus sulamericanus from Hyporthodus haifensis'
+14:58:05 to extract: []
+14:58:44 [huh/eol] bigscience/bloomz-560m: 17 pairs (6s)
+14:58:48 [huh/eol] bigscience/bloomz-1b1: 17 pairs (5s)
+14:58:55 [huh/eol] bigscience/bloomz-1b7: 17 pairs (7s)
+14:59:02 [huh/eol] bigscience/bloomz-3b: 17 pairs (7s)
+14:59:12 [huh/eol] bigscience/bloomz-7b1: 17 pairs (10s)
+14:59:21 [huh/eol] openlm-research/open_llama_3b: 17 pairs (9s)
+14:59:29 [huh/eol] openlm-research/open_llama_7b: 17 pairs (8s)
+14:59:38 [huh/eol] openlm-research/open_llama_13b: 17 pairs (9s)
+14:59:49 [huh/eol] huggyllama/llama-7b: 17 pairs (11s)
+14:59:58 [huh/eol] huggyllama/llama-13b: 17 pairs (9s)
+15:00:15 [huh/eol] huggyllama/llama-30b: 17 pairs (16s)
+15:00:21 [huh/eol] allenai/OLMo-1B-hf: 17 pairs (7s)
+15:00:29 [huh/eol] allenai/OLMo-7B-hf: 17 pairs (8s)
+15:00:34 [huh/eol] google/gemma-2b: 17 pairs (5s)
+15:00:45 [huh/eol] google/gemma-7b: 17 pairs (11s)
+15:00:53 [huh/eol] mistralai/Mistral-7B-v0.1: 17 pairs (9s)
+15:01:01 [huh/eol] mistralai/Mixtral-8x7B-v0.1: 17 pairs (8s)
+15:01:08 [huh/eol] NousResearch/Meta-Llama-3-8B: 17 pairs (7s)
+15:01:14 [huh/eol_alt] bigscience/bloomz-560m: 17 pairs (6s)
+15:01:20 [huh/eol_alt] bigscience/bloomz-1b1: 17 pairs (6s)
+15:01:26 [huh/eol_alt] bigscience/bloomz-1b7: 17 pairs (6s)
+15:01:33 [huh/eol_alt] bigscience/bloomz-3b: 17 pairs (7s)
+15:01:47 [huh/eol_alt] bigscience/bloomz-7b1: 17 pairs (14s)
+15:01:54 [huh/eol_alt] openlm-research/open_llama_3b: 17 pairs (7s)
+15:02:01 [huh/eol_alt] openlm-research/open_llama_7b: 17 pairs (7s)
+15:02:11 [huh/eol_alt] openlm-research/open_llama_13b: 17 pairs (9s)
+15:02:18 [huh/eol_alt] huggyllama/llama-7b: 17 pairs (7s)
+15:02:28 [huh/eol_alt] huggyllama/llama-13b: 17 pairs (10s)
+15:02:32 [huh/eol_alt] allenai/OLMo-1B-hf: 17 pairs (4s)
+15:02:40 [huh/eol_alt] allenai/OLMo-7B-hf: 17 pairs (8s)
+15:02:46 [huh/eol_alt] google/gemma-2b: 17 pairs (5s)
+15:02:53 [huh/eol_alt] google/gemma-7b: 17 pairs (7s)
+15:03:00 [huh/eol_alt] mistralai/Mistral-7B-v0.1: 17 pairs (7s)
+15:03:07 [huh/eol_alt] NousResearch/Meta-Llama-3-8B: 17 pairs (7s)
+15:03:12 [huh/neutral] bigscience/bloomz-560m: 17 pairs (6s)
+15:03:17 [huh/neutral] bigscience/bloomz-1b1: 17 pairs (5s)
+15:03:23 [huh/neutral] bigscience/bloomz-1b7: 17 pairs (5s)
+15:03:32 [huh/neutral] bigscience/bloomz-3b: 17 pairs (9s)
+15:03:41 [huh/neutral] bigscience/bloomz-7b1: 17 pairs (9s)
+15:03:50 [huh/neutral] openlm-research/open_llama_3b: 17 pairs (7s)
+15:03:57 [huh/neutral] openlm-research/open_llama_7b: 17 pairs (7s)
+15:04:06 [huh/neutral] openlm-research/open_llama_13b: 17 pairs (10s)
+15:04:15 [huh/neutral] huggyllama/llama-7b: 17 pairs (9s)
+15:04:25 [huh/neutral] huggyllama/llama-13b: 17 pairs (10s)
+15:04:31 [huh/neutral] allenai/OLMo-1B-hf: 17 pairs (6s)
+15:04:40 [huh/neutral] allenai/OLMo-7B-hf: 17 pairs (9s)
+15:04:45 [huh/neutral] google/gemma-2b: 17 pairs (6s)
+15:04:57 [huh/neutral] google/gemma-7b: 17 pairs (11s)
+15:05:04 [huh/neutral] mistralai/Mistral-7B-v0.1: 17 pairs (8s)
+15:05:12 [huh/neutral] NousResearch/Meta-Llama-3-8B: 17 pairs (7s)
+15:05:16 [huh/repeat] bigscience/bloomz-560m: 17 pairs (4s)
+15:05:21 [huh/repeat] bigscience/bloomz-1b1: 17 pairs (5s)
+15:05:29 [huh/repeat] bigscience/bloomz-1b7: 17 pairs (8s)
+15:05:36 [huh/repeat] bigscience/bloomz-3b: 17 pairs (7s)
+15:05:45 [huh/repeat] bigscience/bloomz-7b1: 17 pairs (10s)
+15:05:52 [huh/repeat] openlm-research/open_llama_3b: 17 pairs (7s)
+15:06:02 [huh/repeat] openlm-research/open_llama_7b: 17 pairs (8s)
+15:06:11 [huh/repeat] openlm-research/open_llama_13b: 17 pairs (9s)
+15:06:20 [huh/repeat] huggyllama/llama-7b: 17 pairs (9s)
+15:06:31 [huh/repeat] huggyllama/llama-13b: 17 pairs (11s)
+15:06:36 [huh/repeat] allenai/OLMo-1B-hf: 17 pairs (6s)
+15:06:51 [huh/repeat] allenai/OLMo-7B-hf: 17 pairs (15s)
+15:06:57 [huh/repeat] google/gemma-2b: 17 pairs (6s)
+15:07:05 [huh/repeat] google/gemma-7b: 17 pairs (7s)
+15:07:13 [huh/repeat] mistralai/Mistral-7B-v0.1: 17 pairs (9s)
+15:07:20 [huh/repeat] NousResearch/Meta-Llama-3-8B: 17 pairs (7s)
+15:07:24 [noclip/eol] bigscience/bloomz-560m: 17 pairs (3s)
+15:07:27 [noclip/eol] bigscience/bloomz-1b1: 17 pairs (3s)
+15:07:30 [noclip/eol] bigscience/bloomz-1b7: 17 pairs (3s)
+15:07:33 [noclip/eol] bigscience/bloomz-3b: 17 pairs (3s)
+15:07:36 [noclip/eol] bigscience/bloomz-7b1: 17 pairs (3s)
+15:07:39 [noclip/eol] openlm-research/open_llama_3b: 17 pairs (3s)
+15:07:42 [noclip/eol] openlm-research/open_llama_7b: 17 pairs (3s)
+15:07:45 [noclip/eol] openlm-research/open_llama_13b: 17 pairs (3s)
+15:07:48 [noclip/eol] huggyllama/llama-7b: 17 pairs (3s)
+15:07:52 [noclip/eol] huggyllama/llama-13b: 17 pairs (3s)
+15:07:56 [noclip/eol] huggyllama/llama-30b: 17 pairs (4s)
+15:07:59 [noclip/eol] allenai/OLMo-1B-hf: 17 pairs (2s)
+15:08:02 [noclip/eol] allenai/OLMo-7B-hf: 17 pairs (3s)
+15:08:05 [noclip/eol] google/gemma-2b: 17 pairs (3s)
+15:08:08 [noclip/eol] google/gemma-7b: 17 pairs (3s)
+15:08:11 [noclip/eol] mistralai/Mistral-7B-v0.1: 17 pairs (3s)
+15:08:14 [noclip/eol] mistralai/Mixtral-8x7B-v0.1: 17 pairs (3s)
+15:08:17 [noclip/eol] NousResearch/Meta-Llama-3-8B: 17 pairs (3s)
+15:08:20 [noclip/eol_alt] bigscience/bloomz-560m: 17 pairs (3s)
+15:08:23 [noclip/eol_alt] bigscience/bloomz-1b1: 17 pairs (3s)
+15:08:25 [noclip/eol_alt] bigscience/bloomz-1b7: 17 pairs (3s)
+15:08:28 [noclip/eol_alt] bigscience/bloomz-3b: 17 pairs (3s)
+15:08:31 [noclip/eol_alt] bigscience/bloomz-7b1: 17 pairs (3s)
+15:08:34 [noclip/eol_alt] openlm-research/open_llama_3b: 17 pairs (3s)
+15:08:37 [noclip/eol_alt] openlm-research/open_llama_7b: 17 pairs (3s)
+15:08:41 [noclip/eol_alt] openlm-research/open_llama_13b: 17 pairs (3s)
+15:08:44 [noclip/eol_alt] huggyllama/llama-7b: 17 pairs (3s)
+15:08:47 [noclip/eol_alt] huggyllama/llama-13b: 17 pairs (3s)
+15:08:50 [noclip/eol_alt] allenai/OLMo-1B-hf: 17 pairs (3s)
+15:08:53 [noclip/eol_alt] allenai/OLMo-7B-hf: 17 pairs (3s)
+15:08:56 [noclip/eol_alt] google/gemma-2b: 17 pairs (3s)
+15:08:59 [noclip/eol_alt] google/gemma-7b: 17 pairs (3s)
+15:09:02 [noclip/eol_alt] mistralai/Mistral-7B-v0.1: 17 pairs (3s)
+15:09:05 [noclip/eol_alt] NousResearch/Meta-Llama-3-8B: 17 pairs (3s)
+15:09:08 [noclip/neutral] bigscience/bloomz-560m: 17 pairs (3s)
+15:09:11 [noclip/neutral] bigscience/bloomz-1b1: 17 pairs (3s)
+15:09:13 [noclip/neutral] bigscience/bloomz-1b7: 17 pairs (3s)
+15:09:16 [noclip/neutral] bigscience/bloomz-3b: 17 pairs (3s)
+15:09:19 [noclip/neutral] bigscience/bloomz-7b1: 17 pairs (3s)
+15:09:22 [noclip/neutral] openlm-research/open_llama_3b: 17 pairs (3s)
+15:09:25 [noclip/neutral] openlm-research/open_llama_7b: 17 pairs (3s)
+15:09:29 [noclip/neutral] openlm-research/open_llama_13b: 17 pairs (3s)
+15:09:32 [noclip/neutral] huggyllama/llama-7b: 17 pairs (3s)
+15:09:36 [noclip/neutral] huggyllama/llama-13b: 17 pairs (3s)
+15:09:38 [noclip/neutral] allenai/OLMo-1B-hf: 17 pairs (2s)
+15:09:41 [noclip/neutral] allenai/OLMo-7B-hf: 17 pairs (3s)
+15:09:44 [noclip/neutral] google/gemma-2b: 17 pairs (3s)
+15:09:47 [noclip/neutral] google/gemma-7b: 17 pairs (3s)
+15:09:50 [noclip/neutral] mistralai/Mistral-7B-v0.1: 17 pairs (3s)
+15:09:53 [noclip/neutral] NousResearch/Meta-Llama-3-8B: 17 pairs (3s)
+15:09:56 [noclip/repeat] bigscience/bloomz-560m: 17 pairs (3s)
+15:09:59 [noclip/repeat] bigscience/bloomz-1b1: 17 pairs (3s)
+15:10:02 [noclip/repeat] bigscience/bloomz-1b7: 17 pairs (3s)
+15:10:05 [noclip/repeat] bigscience/bloomz-3b: 17 pairs (3s)
+15:10:08 [noclip/repeat] bigscience/bloomz-7b1: 17 pairs (3s)
+15:10:11 [noclip/repeat] openlm-research/open_llama_3b: 17 pairs (3s)
+15:10:14 [noclip/repeat] openlm-research/open_llama_7b: 17 pairs (3s)
+15:10:17 [noclip/repeat] openlm-research/open_llama_13b: 17 pairs (4s)
+15:10:20 [noclip/repeat] huggyllama/llama-7b: 17 pairs (3s)
+15:10:24 [noclip/repeat] huggyllama/llama-13b: 17 pairs (4s)
+15:10:27 [noclip/repeat] allenai/OLMo-1B-hf: 17 pairs (3s)
+15:10:30 [noclip/repeat] allenai/OLMo-7B-hf: 17 pairs (3s)
+15:10:33 [noclip/repeat] google/gemma-2b: 17 pairs (3s)
+15:10:36 [noclip/repeat] google/gemma-7b: 17 pairs (3s)
+15:10:39 [noclip/repeat] mistralai/Mistral-7B-v0.1: 17 pairs (3s)
+15:10:42 [noclip/repeat] NousResearch/Meta-Llama-3-8B: 17 pairs (3s)
+15:10:42 zero-variance layers dropped: {'bigscience/bloomz-560m/eol|huh': [0], 'bigscience/bloomz-1b1/eol|huh': [0], 'bigscience/bloomz-1b7/eol|huh': [0], 'bigscience/bloomz-3b/eol|huh': [0], 'bigscience/bloomz-7b1/eol|huh': [0], 'openlm-research/open_llama_3b/eol|huh': [0], 'openlm-research/open_llama_7b/eol|huh': [0], 'openlm-research/open_llama_13b/eol|huh': [0], 'huggyllama/llama-7b/eol|huh': [0], 'huggyllama/llama-13b/eol|huh': [0], 'huggyllama/llama-30b/eol|huh': [0], 'allenai/OLMo-1B-hf/eol|huh': [0], 'allenai/OLMo-7B-hf/eol|huh': [0], 'google/gemma-2b/eol|huh': [0], 'google/gemma-7b/eol|huh': [0], 'mistralai/Mistral-7B-v0.1/eol|huh': [0], 'mistralai/Mixtral-8x7B-v0.1/eol|huh': [0], 'NousResearch/Meta-Llama-3-8B/eol|huh': [0], 'bigscience/bloomz-560m/eol_alt|huh': [0], 'bigscience/bloomz-1b1/eol_alt|huh': [0], 'bigscience/bloomz-1b7/eol_alt|huh': [0], 'bigscience/bloomz-3b/eol_alt|huh': [0], 'bigscience/bloomz-7b1/eol_alt|huh': [0], 'openlm-research/open_llama_3b/eol_alt|huh': [0], 'openlm-research/open_llama_7b/eol_alt|huh': [0], 'openlm-research/open_llama_13b/eol_alt|huh': [0], 'huggyllama/llama-7b/eol_alt|huh': [0], 'huggyllama/llama-13b/eol_alt|huh': [0], 'allenai/OLMo-1B-hf/eol_alt|huh': [0], 'allenai/OLMo-7B-hf/eol_alt|huh': [0], 'google/gemma-2b/eol_alt|huh': [0], 'google/gemma-7b/eol_alt|huh': [0], 'mistralai/Mistral-7B-v0.1/eol_alt|huh': [0], 'NousResearch/Meta-Llama-3-8B/eol_alt|huh': [0], 'bigscience/bloomz-560m/neutral|huh': [0], 'bigscience/bloomz-1b1/neutral|huh': [0], 'bigscience/bloomz-1b7/neutral|huh': [0], 'bigscience/bloomz-3b/neutral|huh': [0], 'bigscience/bloomz-7b1/neutral|huh': [0], 'openlm-research/open_llama_3b/neutral|huh': [0], 'openlm-research/open_llama_7b/neutral|huh': [0], 'openlm-research/open_llama_13b/neutral|huh': [0], 'huggyllama/llama-7b/neutral|huh': [0], 'huggyllama/llama-13b/neutral|huh': [0], 'allenai/OLMo-1B-hf/neutral|huh': [0], 'allenai/OLMo-7B-hf/neutral|huh': [0], 'google/gemma-2b/neutral|huh': [0], 'google/gemma-7b/neutral|huh': [0], 'mistralai/Mistral-7B-v0.1/neutral|huh': [0], 'NousResearch/Meta-Llama-3-8B/neutral|huh': [0], 'bigscience/bloomz-560m/eol|noclip': [0], 'bigscience/bloomz-1b1/eol|noclip': [0], 'bigscience/bloomz-1b7/eol|noclip': [0], 'bigscience/bloomz-3b/eol|noclip': [0], 'bigscience/bloomz-7b1/eol|noclip': [0], 'openlm-research/open_llama_3b/eol|noclip': [0], 'openlm-research/open_llama_7b/eol|noclip': [0], 'openlm-research/open_llama_13b/eol|noclip': [0], 'huggyllama/llama-7b/eol|noclip': [0], 'huggyllama/llama-13b/eol|noclip': [0], 'huggyllama/llama-30b/eol|noclip': [0], 'allenai/OLMo-1B-hf/eol|noclip': [0], 'allenai/OLMo-7B-hf/eol|noclip': [0], 'google/gemma-2b/eol|noclip': [0], 'google/gemma-7b/eol|noclip': [0], 'mistralai/Mistral-7B-v0.1/eol|noclip': [0], 'mistralai/Mixtral-8x7B-v0.1/eol|noclip': [0], 'NousResearch/Meta-Llama-3-8B/eol|noclip': [0], 'bigscience/bloomz-560m/eol_alt|noclip': [0], 'bigscience/bloomz-1b1/eol_alt|noclip': [0], 'bigscience/bloomz-1b7/eol_alt|noclip': [0], 'bigscience/bloomz-3b/eol_alt|noclip': [0], 'bigscience/bloomz-7b1/eol_alt|noclip': [0], 'openlm-research/open_llama_3b/eol_alt|noclip': [0], 'openlm-research/open_llama_7b/eol_alt|noclip': [0], 'openlm-research/open_llama_13b/eol_alt|noclip': [0], 'huggyllama/llama-7b/eol_alt|noclip': [0], 'huggyllama/llama-13b/eol_alt|noclip': [0], 'allenai/OLMo-1B-hf/eol_alt|noclip': [0], 'allenai/OLMo-7B-hf/eol_alt|noclip': [0], 'google/gemma-2b/eol_alt|noclip': [0], 'google/gemma-7b/eol_alt|noclip': [0], 'mistralai/Mistral-7B-v0.1/eol_alt|noclip': [0], 'NousResearch/Meta-Llama-3-8B/eol_alt|noclip': [0], 'bigscience/bloomz-560m/neutral|noclip': [0], 'bigscience/bloomz-1b1/neutral|noclip': [0], 'bigscience/bloomz-1b7/neutral|noclip': [0], 'bigscience/bloomz-3b/neutral|noclip': [0], 'bigscience/bloomz-7b1/neutral|noclip': [0], 'openlm-research/open_llama_3b/neutral|noclip': [0], 'openlm-research/open_llama_7b/neutral|noclip': [0], 'openlm-research/open_llama_13b/neutral|noclip': [0], 'huggyllama/llama-7b/neutral|noclip': [0], 'huggyllama/llama-13b/neutral|noclip': [0], 'allenai/OLMo-1B-hf/neutral|noclip': [0], 'allenai/OLMo-7B-hf/neutral|noclip': [0], 'google/gemma-2b/neutral|noclip': [0], 'google/gemma-7b/neutral|noclip': [0], 'mistralai/Mistral-7B-v0.1/neutral|noclip': [0], 'NousResearch/Meta-Llama-3-8B/neutral|noclip': [0]}
+15:10:58 checker: 22 PASS / 24
+15:11:07 packaged /content/drive/MyDrive/prh_audit/e2prompt/e2p_results.zip 0.7 MB
+15:17:12 device: NVIDIA RTX PRO 6000 Blackwell Server Edition | transformers 5.19.0 | free disk GB 191 | run dir: /content/drive/MyDrive/prh_audit/e2prompt
+15:17:22 dataset: 1024 captions; first: 'Figure 2 of Paper. Pseudorhabdosynochus sulamericanus from Hyporthodus haifensis'
+15:17:25 to extract: []
+15:17:25 zero-variance layers dropped: {}
+15:17:41 checker: 22 PASS / 24
+15:17:50 packaged /content/drive/MyDrive/prh_audit/e2prompt/e2p_results.zip 0.7 MB
+15:44:16 device: NVIDIA RTX PRO 6000 Blackwell Server Edition | transformers 5.19.0 | free disk GB 207 | run dir: /content/drive/MyDrive/prh_audit/e2prompt
+15:44:39 dataset: 1024 captions; first: 'Figure 2 of Paper. Pseudorhabdosynochus sulamericanus from Hyporthodus haifensis'
+15:44:47 to extract: ['huggyllama/llama-65b']
+15:44:47 cleared old downloads: free disk 206 -> 206 GB
+15:44:47 pre-flight: huggyllama/llama-65b {'weights_gb': 130.6, 'weights_gib': 121.6, 'format': 'safetensors', 'gpu_gib': 95.0, 'cpu_free_gib': 170.8, 'disk_free_gb': 206.1, 'mode': 'gpu+cpu'} | readouts: ['eol']
+16:02:20 llm done: huggyllama/llama-65b readouts=['eol'] feats=(1024, 81, 8192) placement=gpu+cpu batch=8 (1052s) | free disk 205 GB
+16:03:17 [huh/eol] huggyllama/llama-65b: 17 pairs (11s)
+16:03:27 [noclip/eol] huggyllama/llama-65b: 17 pairs (6s)
+16:03:29 zero-variance layers dropped: {'huggyllama/llama-65b/eol|huh': [0], 'huggyllama/llama-65b/eol|noclip': [0]}
+16:11:08 checker: 22 PASS / 24

@@ -1,0 +1,1 @@
+{"task": {"kind": "geometry", "dataset": "coco_train2014", "vision": "dinov2_vit-g14@224_mean", "language": "qwen3-8b-gen_69445574b3021b8a2733e87d8603d769"}, "metrics": {"cka": 0.6571515440311899, "mutual_knn": 0.13042999804019928, "tsi": 0.6676636338233948, "qsi": 0.6544001698493958}, "seconds": 6.04814887046814}

@@ -1,0 +1,1 @@
+{"task": {"kind": "align", "dataset": "coco_train2014", "vision": "dinov2_vit-g14@224_mean", "language": "mpnet", "seed": 839703249}, "metrics": {"foscttm": 0.1355725002708753, "mean_rank": 5492.0929784712625, "num_validation_samples": 40504, "fit_and_evaluation_seconds": 3095.8654375076294}, "seconds": 3095.888684988022}

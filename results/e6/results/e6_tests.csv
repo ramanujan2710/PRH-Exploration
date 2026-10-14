@@ -1,0 +1,57 @@
+test,scope,variant,metric,delta,ci_low,ci_high,positive,primary
+"P1 Qwen3-Embedding(last) - Qwen3-Base(mean), DINOv2 cls",layers,huh,cka_max,-0.0009880099031660415,-0.00797333319981893,0.004477153221766117,5/9,False
+"P1 Qwen3-Embedding(last) - Qwen3-Base(mean), DINOv2 cls",layers,huh,cka_cal,-0.0008595492259696191,-0.009921894474468729,0.00608576717700295,5/9,True
+"P1 Qwen3-Embedding(last) - Qwen3-Base(mean), DINOv2 cls",layers,huh,ucka_heldout,0.00012585851881237917,-0.00180122256278988,0.003521601359049461,6/9,True
+"P1 Qwen3-Embedding(last) - Qwen3-Base(mean), DINOv2 cls",layers,huh,ucka_max,0.004592604107326931,0.0037063757578532086,0.005152493715286255,6/9,False
+"P1 Qwen3-Embedding(last) - Qwen3-Base(mean), DINOv2 cls",layers,huh,mknn_max,0.008279079364405749,0.0036132807532946363,0.013118485609690339,7/9,False
+"P1 Qwen3-Embedding(last) - Qwen3-Base(mean), DINOv2 cls",layers,huh,mknn_cal,0.008394776369461366,0.003692053548885401,0.0133004943471623,7/9,False
+"P1 Qwen3-Embedding(last) - Qwen3-Base(mean), DINOv2 cls",layers,noclip,cka_max,0.17325774994161394,0.16434208552042642,0.1832892745733261,9/9,False
+"P1 Qwen3-Embedding(last) - Qwen3-Base(mean), DINOv2 cls",layers,noclip,cka_cal,0.1679831060809045,0.1564066376828866,0.17992796558379207,9/9,False
+"P1 Qwen3-Embedding(last) - Qwen3-Base(mean), DINOv2 cls",layers,noclip,ucka_heldout,0.18394345541795096,0.17472278575102487,0.19471820195515951,9/9,False
+"P1 Qwen3-Embedding(last) - Qwen3-Base(mean), DINOv2 cls",layers,noclip,ucka_max,0.18335967097017505,0.16814440985520682,0.2010063230991364,9/9,False
+"P1 Qwen3-Embedding(last) - Qwen3-Base(mean), DINOv2 cls",layers,noclip,mknn_max,0.041970486442248024,0.04143880556027097,0.0427734355131785,9/9,False
+"P1 Qwen3-Embedding(last) - Qwen3-Base(mean), DINOv2 cls",layers,noclip,mknn_cal,0.04245081090027614,0.041773825495343066,0.04325325221007151,9/9,False
+"P1 Qwen3-Embedding(last) - Qwen3-Base(mean), DINOv2 cls",final,huh,cka_max,0.0644456959433026,0.06282099088033044,0.06578569610913597,9/9,False
+"P1 Qwen3-Embedding(last) - Qwen3-Base(mean), DINOv2 cls",final,huh,cka_cal,0.045792961034141,0.0440160599004015,0.04886717973992824,9/9,False
+"P1 Qwen3-Embedding(last) - Qwen3-Base(mean), DINOv2 cls",final,huh,ucka_max,0.044121556811862514,0.04201001922289527,0.047231212258338935,9/9,False
+"P1 Qwen3-Embedding(last) - Qwen3-Base(mean), DINOv2 cls",final,huh,mknn_max,0.01957465377118852,0.0174479161699613,0.020865884919961265,9/9,False
+"P1 Qwen3-Embedding(last) - Qwen3-Base(mean), DINOv2 cls",final,noclip,cka_max,0.212459829946359,0.20810584972302124,0.21855473518371582,9/9,False
+"P1 Qwen3-Embedding(last) - Qwen3-Base(mean), DINOv2 cls",final,noclip,cka_cal,0.14323838615777426,0.13387228997023962,0.1554196528762463,9/9,False
+"P1 Qwen3-Embedding(last) - Qwen3-Base(mean), DINOv2 cls",final,noclip,ucka_max,0.14001800989111265,0.1306962432960669,0.15177674839893976,9/9,False
+"P1 Qwen3-Embedding(last) - Qwen3-Base(mean), DINOv2 cls",final,noclip,mknn_max,0.04091796775658924,0.039225260416666664,0.04283854116996127,9/9,False
+P3 encoder - decoder gap | DINOv2 cls,layers,huh,cka_cal,-0.0008595492259696191,-0.009921894474468729,0.00608576717700295,5/9,True
+P3 encoder - decoder gap | DINOv2 cls,layers,huh,ucka_heldout,0.00012585851881237917,-0.00180122256278988,0.003521601359049461,6/9,True
+P3 encoder - decoder gap | DINOv2 cls,layers,huh,mknn_max,0.008279079364405749,0.0036132807532946363,0.013118485609690339,7/9,False
+P3 encoder - decoder gap | MAE cls,layers,huh,cka_cal,0.006753767593939031,0.006045020929254953,0.00722583916711043,6/9,True
+P3 encoder - decoder gap | MAE cls,layers,huh,ucka_heldout,0.007504456573062457,0.004548023144404066,0.009096175432205164,6/9,True
+P3 encoder - decoder gap | MAE cls,layers,huh,mknn_max,0.005436199406782789,0.004622397323449466,0.006933597226937603,9/9,False
+P3 encoder - decoder gap | DINOv2 mean,layers,huh,cka_cal,0.003743811204553909,0.0018349808100208698,0.007071733961666031,6/9,False
+P3 encoder - decoder gap | DINOv2 mean,layers,huh,ucka_heldout,5.0067901611328125e-05,-0.0019518733024596984,0.003814558188120524,6/9,False
+P3 encoder - decoder gap | DINOv2 mean,layers,huh,mknn_max,0.00736762252118851,0.006347656250000032,0.009147134919961266,9/9,False
+P3 encoder - decoder gap | MAE mean,layers,huh,cka_cal,0.005635375518611433,0.004577258774914707,0.006277617330812298,6/9,False
+P3 encoder - decoder gap | MAE mean,layers,huh,ucka_heldout,0.005879650513331077,0.004399582743644705,0.007230609655380231,6/9,False
+P3 encoder - decoder gap | MAE mean,layers,huh,mknn_max,0.00532768915096921,0.004199219246705438,0.00634765376647313,9/9,False
+P3 encoder - decoder gap | DINOv2 cls,layers,noclip,cka_cal,0.1679831060809045,0.1564066376828866,0.17992796558379207,9/9,False
+P3 encoder - decoder gap | DINOv2 cls,layers,noclip,ucka_heldout,0.18394345541795096,0.17472278575102487,0.19471820195515951,9/9,False
+P3 encoder - decoder gap | DINOv2 cls,layers,noclip,mknn_max,0.041970486442248024,0.04143880556027097,0.0427734355131785,9/9,False
+P3 encoder - decoder gap | MAE cls,layers,noclip,cka_cal,0.14460267946415686,0.12513090789772774,0.15567342958520236,9/9,False
+P3 encoder - decoder gap | MAE cls,layers,noclip,ucka_heldout,0.13836349960830477,0.12123571336269379,0.1486824303865433,9/9,False
+P3 encoder - decoder gap | MAE cls,layers,noclip,mknn_max,0.02131076446837849,0.018196616321802132,0.022884114334980638,9/9,False
+P3 encoder - decoder gap | DINOv2 mean,layers,noclip,cka_cal,0.20909070033062097,0.19944395036443796,0.21426695183608194,9/9,False
+P3 encoder - decoder gap | DINOv2 mean,layers,noclip,ucka_heldout,0.20331587228510115,0.18721996744473776,0.21194470922152203,9/9,False
+P3 encoder - decoder gap | DINOv2 mean,layers,noclip,mknn_max,0.03794487731324302,0.03590494642655057,0.04046223809321723,9/9,False
+P3 encoder - decoder gap | MAE mean,layers,noclip,cka_cal,0.09882582046038796,0.09515672787317864,0.1047425205578265,9/9,False
+P3 encoder - decoder gap | MAE mean,layers,noclip,ucka_heldout,0.08791245685683356,0.08488042155901589,0.09141158560911816,9/9,False
+P3 encoder - decoder gap | MAE mean,layers,noclip,mknn_max,0.015527344412273788,0.014225260665019298,0.016959636161724703,9/9,False
+P4 decoder last - mean,final,huh,cka_cal,-0.08628977903338292,-0.09644711176731935,-0.07889850568106943,0/9,False
+P4 decoder last - mean,final,huh,ucka_max,-0.08565510726637311,-0.09566894173622129,-0.07870602607727055,0/9,False
+P4 decoder last - mean,final,huh,mknn_max,-0.028038194610012914,-0.030240884671608594,-0.02636718874176343,0/9,False
+P4 decoder prompt - mean,final,huh,cka_cal,0.04952541970604158,0.04648476264953394,0.05359342143697654,9/9,False
+P4 decoder prompt - mean,final,huh,ucka_max,0.04937236507733664,0.0466801126797994,0.05311533312002817,9/9,False
+P4 decoder prompt - mean,final,huh,mknn_max,0.027018228338824377,0.02490234375,0.029264320929845163,9/9,False
+P4 decoder last - mean,layers,huh,cka_cal,-0.12092141726868973,-0.12494352527298161,-0.11824983282252319,0/9,False
+P4 decoder last - mean,layers,huh,ucka_max,-0.1430201447672314,-0.15117420752843222,-0.1354342500368754,0/9,False
+P4 decoder last - mean,layers,huh,mknn_max,-0.052994793073998556,-0.05784505357344944,-0.04563802108168603,0/9,False
+P4 decoder prompt - mean,layers,huh,cka_cal,0.04429908956468954,0.028480818721397627,0.05601991158413387,6/9,False
+P4 decoder prompt - mean,layers,huh,ucka_max,0.03433305025100708,0.028529773155848186,0.040810585021972656,6/9,False
+P4 decoder prompt - mean,layers,huh,mknn_max,0.007172308862209334,0.002506509423255962,0.011946616073449434,9/9,False
